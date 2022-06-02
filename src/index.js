@@ -6,6 +6,7 @@ import Layout from "./Layout";
 
 //Gallery, RSVP, Registry, GuestBook, Wedding info
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <div>
     <div>

@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Row, Form, Col, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import { db } from "../util/config";
+import { ref, set } from "firebase/database";
 
 const RSVP = () => {
   const [doesHeCome, setRSVP] = useState(false);
@@ -42,6 +44,8 @@ const RSVP = () => {
     event.preventDefault();
     console.log(submitData);
     sendEmail(submitData);
+    const RSVPREF = ref(db, "RSVP/" + submitData.name);
+    set(RSVPREF, submitData);
     updateSubmitData({ name: "", yesorno: "", menu: "" });
   };
 

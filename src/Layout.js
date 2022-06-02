@@ -7,13 +7,19 @@ import { GuestBook } from "./Components/GuestBook";
 import { WeddingInfo } from "./Components/WeddingInfo";
 import Gallery from "./Components/Gallery";
 import { Videos } from "./Components/Videos";
-import { Player } from "./Player";
+import ReactPlayer from "react-player";
+
 const Layout = () => {
   const DefaultContainer = () => {
     return (
       <div>
         <NavScript />
-        <Player />
+        <ReactPlayer
+          url={"https://www.youtube.com/watch?v=lgs6Tbs6fXE&t=2s"}
+          playing={true}
+          width={"0px"}
+          height={"0px"}
+        ></ReactPlayer>
         <Routes>
           <Route path="/" element={<App />}></Route>
           <Route path="/RSVP" element={<RSVP />}></Route>
@@ -30,7 +36,7 @@ const Layout = () => {
     <Router>
       <Routes>
         <Route path="*" element={<DefaultContainer />}></Route>
-        <Route path="/Registry" element={<Registry />}></Route>
+        <Route exact path="/Registry" element={<Registry />}></Route>
       </Routes>
     </Router>
   );

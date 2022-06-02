@@ -18,7 +18,12 @@ const NavScript = () => {
               <Nav.Link as={Link} to="/RSVP">
                 RSVP
               </Nav.Link>
-              <Nav.Link as={Link} to="/Registry" target="_blank">
+              <Nav.Link
+                target="_blank"
+                as={Link}
+                to="/Registry"
+                rel="noreferrer noopener"
+              >
                 Registry
               </Nav.Link>
               <Nav.Link as={Link} to="/Gallery">
