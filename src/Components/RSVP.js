@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
-import { Row, Form, Col, Button } from "react-bootstrap";
+import { Row, Form, Col, Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { db } from "../util/config";
 import { ref, set } from "firebase/database";
@@ -7,12 +8,17 @@ import { ref, set } from "firebase/database";
 const RSVP = () => {
   const [doesHeCome, setRSVP] = useState(false);
   const [disabledSetting, setDisabled] = useState(false);
+  const [Modalshow, setModalShow] = useState(false);
   const [submitData, updateSubmitData] = useState({
     name: "",
     yesorno: "",
     menu: "",
   });
+  const handleClose = () => {
+    setModalShow(false);
+  };
 
+  const handleShow = () => setModalShow(true);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -46,7 +52,7 @@ const RSVP = () => {
     sendEmail(submitData);
     const RSVPREF = ref(db, "RSVP/" + submitData.name);
     set(RSVPREF, submitData);
-    updateSubmitData({ name: "", yesorno: "", menu: "" });
+    handleShow();
   };
 
   React.useEffect(() => {
@@ -154,6 +160,17 @@ const RSVP = () => {
           Submit
         </Button>
       </Form>
+      <Modal show={Modalshow} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>감사합니다!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>RSVP 등록완료!</Modal.Body>
+        <Modal.Footer>
+          <Button as={Link} to="/" variant="primary" onClick={handleClose}>
+            닫기
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
