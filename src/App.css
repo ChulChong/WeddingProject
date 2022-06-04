@@ -1,8 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Nuosu+SIL&display=swap");
 #WeddingPic {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  margin-top: 20px;
+}
+#WeddingPicMobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 20px;
+}
+.NavBrand {
+  font-family: "Cormorant Unicase", serif;
+  text-align: center !important;
+  font-size: 60px !important;
+  margin-right: auto;
+  margin-left: auto;
+  color: black !important;
+}
+.and {
+  font-size: 20px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.NavbarStyle {
+  font-family: "Nuosu SIL", serif;
+  text-align: center !important;
+}
+.navbar-toggle {
+  margin: 0 auto !important;
 }
 
 #navbar {
@@ -12,7 +41,7 @@
 .RSVP {
   text-align: center;
   vertical-align: middle;
-  margin-top: 10vh;
+  margin-top: 4vh;
   margin-left: 30vw;
   margin-right: 30vw;
 }
@@ -20,26 +49,20 @@
   padding-top: 25px;
 }
 
-.Gallery {
-  margin: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
-  display: "block";
-  width: "50%";
-  overflow: "auto";
-}
-
 .Youtubevideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.Youtubevideo2 {
   display: block;
+  padding: 0px !important;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width: 80vw;
+}
+
+.YoutubevideoMobile {
+  display: block;
+  padding: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
 }
 
 .video {

@@ -1,2 +1,6 @@
 import React from "react";
-export const WeddingInfo = () => <div>Wedding Info</div>;
+export const WeddingInfo = () => {
+  return <div>Wedding Info</div>;
+};
+
+export default WeddingInfo;

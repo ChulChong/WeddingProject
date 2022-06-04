@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavScript from "./Components/Navbar";
 import RSVP from "./Components/RSVP";
 import Registry from "./Components/Registry";
-import { GuestBook } from "./Components/GuestBook";
-import { WeddingInfo } from "./Components/WeddingInfo";
+import GuestBook from "./Components/GuestBook";
+import WeddingInfo from "./Components/WeddingInfo";
 import Gallery from "./Components/Gallery";
-import { Videos } from "./Components/Videos";
+import Videos from "./Components/Videos";
 import ReactPlayer from "react-player";
 
 const Layout = () => {
@@ -19,6 +19,7 @@ const Layout = () => {
           playing={true}
           width={"0px"}
           height={"0px"}
+          volume={0.2}
         ></ReactPlayer>
         <Routes>
           <Route path="/" element={<App />}></Route>

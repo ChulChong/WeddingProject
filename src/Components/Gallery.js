@@ -2,11 +2,11 @@
 import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
-import img1 from "./IMG_1205.JPG";
-import img2 from "./IMG_2021.jpg";
-import img3 from "/Users/chulchong/cs/wedding/src/Components/IMG_2238.JPG";
-import img4 from "/Users/chulchong/cs/wedding/src/Components/IMG2222.JPG";
-import img5 from "/Users/chulchong/cs/wedding/src/Components/IMG_9622.jpg";
+import img1 from "/Users/chulchong/cs/wedding/src/util/IMG_1205.JPG";
+import img2 from "/Users/chulchong/cs/wedding/src/util/IMG_2021.jpg";
+import img3 from "/Users/chulchong/cs/wedding/src/util/IMG_2238.JPG";
+import img4 from "/Users/chulchong/cs/wedding/src/util/IMG2222.JPG";
+import img5 from "/Users/chulchong/cs/wedding/src/util/IMG_9622.jpg";
 const Gallery = () => {
   const items = [
     {
@@ -122,13 +122,15 @@ const Gallery = () => {
   const scrollingElement = window;
 
   return (
-    <ProGallery
-      items={items}
-      options={options}
-      container={container}
-      eventsListener={eventsListener}
-      scrollingElement={scrollingElement}
-    />
+    <div className="Gallery">
+      <ProGallery
+        items={items}
+        options={options}
+        container={container}
+        eventsListener={eventsListener}
+        scrollingElement={scrollingElement}
+      />
+    </div>
   );
 };
 

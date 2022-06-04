@@ -28,6 +28,9 @@ li {
   padding: 0.5em;
   text-transform: uppercase;
 }
+ul {
+  padding: 0;
+}
 
 li span {
   display: block;
