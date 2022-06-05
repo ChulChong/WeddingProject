@@ -5,6 +5,7 @@
   margin-right: auto;
   width: 30%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 #WeddingPicMobile {
   display: block;
@@ -12,6 +13,7 @@
   margin-right: auto;
   width: 90%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .NavBrand {
   font-family: "Cormorant Unicase", serif;
@@ -44,6 +46,14 @@
   margin-top: 4vh;
   margin-left: 30vw;
   margin-right: 30vw;
+}
+.RSVPMobile {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 .radiobutton {
   padding-top: 25px;

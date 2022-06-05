@@ -1,6 +1,7 @@
 import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
+import { useMediaQuery } from "react-responsive";
 import img1 from "/Users/chulchong/cs/wedding/src/util/IMG_1205.JPG";
 import img2 from "/Users/chulchong/cs/wedding/src/util/IMG_2021.jpg";
 import img3 from "/Users/chulchong/cs/wedding/src/util/IMG_2238.JPG";
@@ -8,6 +9,10 @@ import img4 from "/Users/chulchong/cs/wedding/src/util/IMG2222.JPG";
 import img5 from "/Users/chulchong/cs/wedding/src/util/IMG_9622.jpg";
 
 const Gallery = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const items = [
     {
       // Image item:
@@ -108,6 +113,17 @@ const Gallery = () => {
     imagePlacementAnimation: "SLIDE",
   };
 
+  const Mobileoptions = {
+    galleryLayout: 0,
+    collageDensity: "0.2",
+    galleryMargin: 40,
+    hoveringBehaviour: "NEVER_SHOW",
+    scrollAnimation: "FADE_IN",
+    imageHoverAnimation: "ZOOM_IN",
+    gallerySize: 100,
+    imagePlacementAnimation: "SLIDE",
+  };
+
   // The size of the gallery container. The images will fit themselves in it
   const container = {
     width: window.innerWidth,
@@ -122,14 +138,29 @@ const Gallery = () => {
   const scrollingElement = window;
 
   return (
-    <div className="Gallery">
-      <ProGallery
-        items={items}
-        options={options}
-        container={container}
-        eventsListener={eventsListener}
-        scrollingElement={scrollingElement}
-      />
+    <div>
+      {isDesktopOrLaptop && (
+        <div className="Gallery">
+          <ProGallery
+            items={items}
+            options={options}
+            container={container}
+            eventsListener={eventsListener}
+            scrollingElement={scrollingElement}
+          />
+        </div>
+      )}
+      {isTabletOrMobile && (
+        <div className="Gallery">
+          <ProGallery
+            items={items}
+            options={Mobileoptions}
+            container={container}
+            eventsListener={eventsListener}
+            scrollingElement={scrollingElement}
+          />
+        </div>
+      )}
     </div>
   );
 };
