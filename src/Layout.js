@@ -1,4 +1,4 @@
-import App from "./App";
+import Home from "./Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavScript from "./Components/Navbar";
 import RSVP from "./Components/RSVP";
@@ -22,7 +22,7 @@ const Layout = () => {
           volume={0.2}
         ></ReactPlayer>
         <Routes>
-          <Route path="/" element={<App />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/RSVP" element={<RSVP />}></Route>
           <Route path="/Gallery" element={<Gallery />}></Route>
           <Route path="/GuestBook" element={<GuestBook />}></Route>

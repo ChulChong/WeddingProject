@@ -14,13 +14,15 @@ const RSVP = () => {
     yesorno: "",
     menu: "",
   });
+  const form = useRef();
+
+  //modal control
   const handleClose = () => {
     setModalShow(false);
   };
-
   const handleShow = () => setModalShow(true);
-  const form = useRef();
 
+  //sendEmail function
   const sendEmail = (e) => {
     emailjs
       .sendForm(
@@ -39,13 +41,14 @@ const RSVP = () => {
       );
   };
 
+  //handle change function
   const handleChange = (event) => {
     updateSubmitData({
       ...submitData,
       [event.target.name]: event.target.value,
     });
   };
-
+  //handle submit function
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(submitData);
@@ -55,6 +58,7 @@ const RSVP = () => {
     handleShow();
   };
 
+  //fucntion for boolean change
   React.useEffect(() => {
     if (doesHeCome === false) {
       setDisabled(true);

@@ -3,12 +3,14 @@ import { db } from "../util/firestoreconfig";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const GuestBookWriter = () => {
+  //setting user data constructor.
   const [User, SetUserName] = useState({
     name: "",
     message: "",
     timestamp: serverTimestamp(),
   });
 
+  //Handle Change function
   const handleChange = (event) => {
     SetUserName({
       ...User,
@@ -16,6 +18,7 @@ const GuestBookWriter = () => {
     });
   };
 
+  //Handle Submit function
   function handleSubmit(e) {
     e.preventDefault();
     console.log(User);

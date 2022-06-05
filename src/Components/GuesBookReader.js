@@ -3,11 +3,13 @@ import { db } from "../util/firestoreconfig";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 const GuestBookReader = () => {
+  //setting User Data
   const [User, SetUserName] = useState([]);
+  //call the function
   useEffect(() => {
     getData();
   });
-
+  //getting data function from database
   function getData() {
     const guestbookCollRef = collection(db, "GuestBook");
     const q = query(guestbookCollRef, orderBy("timestamp", "desc"));

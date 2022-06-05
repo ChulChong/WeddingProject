@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
@@ -7,6 +6,7 @@ import img2 from "/Users/chulchong/cs/wedding/src/util/IMG_2021.jpg";
 import img3 from "/Users/chulchong/cs/wedding/src/util/IMG_2238.JPG";
 import img4 from "/Users/chulchong/cs/wedding/src/util/IMG2222.JPG";
 import img5 from "/Users/chulchong/cs/wedding/src/util/IMG_9622.jpg";
+
 const Gallery = () => {
   const items = [
     {

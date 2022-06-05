@@ -1,6 +1,7 @@
 import { React, useEffect } from "react";
 
 const Registry = () => {
+  //zola api call
   const zolaFunction = (e, t, n) => {
     var s,
       a = e.getElementsByTagName(t)[0];
