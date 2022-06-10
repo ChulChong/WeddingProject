@@ -2,6 +2,8 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import "./Navbar.css";
+
 //Gallery, RSVP, Registry, GuestBook, Wedding info
 
 const NavScript = () => {
@@ -14,6 +16,10 @@ const NavScript = () => {
     <div>
       {isDesktopOrLaptop && (
         <div>
+          <div className="headerheader">
+            Jan 21, 2023 Dahlonega, GA
+            <span className="chultake"> #ChulTakesTheHannah</span>
+          </div>
           <div className="d-flex justify-content-center">
             <Nav.Link
               className="NavBrand p-0"
@@ -21,20 +27,18 @@ const NavScript = () => {
               to="/"
               onClick={() => setExpanded(false)}
             >
-              <div>Chul</div>
-              <div className="and p-0">and</div>
-              <div>Hannah</div>
+              <div>Hannah & Chul</div>
             </Nav.Link>
           </div>
           <div className="d-flex justify-content-center">
             <Navbar
-              className="NavbarStyle p-sm-0 p-0 p-md-1 p-lg-1 p-xl-3 p-xxl-3"
+              className="NavbarStyle p-sm-0 p-0"
               expand="lg"
               expanded={expanded}
             >
               <Container>
                 <Navbar.Toggle
-                  className="navbar-toggle icon-bar p-sm-0 p-0 p-md-1 p-lg-1"
+                  className="navbar-toggle icon-bar p-0 "
                   aria-controls="basic-navbar-nav"
                   onClick={() => setExpanded(expanded ? false : "expanded")}
                 />
@@ -42,8 +46,17 @@ const NavScript = () => {
                   <Nav>
                     <Nav.Link
                       as={Link}
-                      to="/RSVP"
+                      to="/"
                       onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Home
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/IsRSVP"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
                     >
                       RSVP
                     </Nav.Link>
@@ -53,6 +66,7 @@ const NavScript = () => {
                       to="/Registry"
                       rel="noreferrer noopener"
                       onClick={() => setExpanded(false)}
+                      className="navbutton"
                     >
                       Registry
                     </Nav.Link>
@@ -60,20 +74,15 @@ const NavScript = () => {
                       as={Link}
                       to="/Gallery"
                       onClick={() => setExpanded(false)}
+                      className="navbutton"
                     >
                       Gallery
                     </Nav.Link>
                     <Nav.Link
                       as={Link}
-                      to="/GuestBook"
-                      onClick={() => setExpanded(false)}
-                    >
-                      GuestBook
-                    </Nav.Link>
-                    <Nav.Link
-                      as={Link}
                       to="/WeddingInfo"
                       onClick={() => setExpanded(false)}
+                      className="navbutton"
                     >
                       Wedding Info
                     </Nav.Link>
@@ -81,6 +90,7 @@ const NavScript = () => {
                       as={Link}
                       to="/Videos"
                       onClick={() => setExpanded(false)}
+                      className="navbutton"
                     >
                       Videos
                     </Nav.Link>
@@ -89,21 +99,19 @@ const NavScript = () => {
               </Container>
             </Navbar>
           </div>
+          <hr className="hr" />
         </div>
       )}
       {isTabletOrMobile && (
         <div>
-          {" "}
           <div className="d-flex justify-content-center">
             <Nav.Link
-              className="NavBrand p-10"
+              className="NavBrandMobile p-0"
               as={Link}
               to="/"
               onClick={() => setExpanded(false)}
             >
-              <div>Chul</div>
-              <div className="and p-0">and</div>
-              <div>Hannah</div>
+              <div>Hannah & Chul</div>
             </Nav.Link>
           </div>
           <div className="d-flex justify-content-center">
@@ -122,7 +130,15 @@ const NavScript = () => {
                   <Nav>
                     <Nav.Link
                       as={Link}
-                      to="/RSVP"
+                      to="/"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Home
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/IsRSVP"
                       onClick={() => setExpanded(false)}
                     >
                       RSVP
@@ -142,13 +158,6 @@ const NavScript = () => {
                       onClick={() => setExpanded(false)}
                     >
                       Gallery
-                    </Nav.Link>
-                    <Nav.Link
-                      as={Link}
-                      to="/GuestBook"
-                      onClick={() => setExpanded(false)}
-                    >
-                      GuestBook
                     </Nav.Link>
                     <Nav.Link
                       as={Link}

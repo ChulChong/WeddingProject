@@ -1,62 +1,134 @@
-/* general styling */
-:root {
-  --smaller: 0.75;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Nuosu+SIL&display=swap");
+#WeddingPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.centered {
+  font-family: "Cormorant Unicase", serif;
+  position: relative;
+  color: antiquewhite;
+  font-size: 80px;
+  width: 100%;
+  top: -720px;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.centeredMobile {
+  font-family: "Cormorant Unicase", serif;
+  position: relative;
+  height: auto;
+  color: antiquewhite;
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  top: -300px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.headerNext {
+  font-family: "Cormorant Unicase", serif;
 }
 
-.container {
-  color: #333;
-  margin: 0 auto;
+.weddingwho {
+  font-family: "Cormorant Unicase", serif;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.weddingwhoMobile {
+  font-family: "Cormorant Unicase", serif;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.ourname {
+  font-size: 80px;
+}
+
+.ournameMobile {
+  font-size: 40px;
+}
+
+.row {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
   text-align: center;
 }
 
-h1 {
-  font-weight: normal;
-  letter-spacing: 0.125rem;
-  text-transform: uppercase;
+.rowMobile {
+  margin-top: 40px;
+  display: flex;
 }
 
-li {
-  display: inline-block;
-  font-size: 1em;
-  list-style-type: none;
-  padding: 0.5em;
-  text-transform: uppercase;
-}
-ul {
-  padding: 0;
+.columnMobile {
+  flex: 50%;
+  text-align: center;
 }
 
-li span {
-  display: block;
-  font-size: 1.5rem;
+.hrvertical {
+  margin-top: 40px;
+  height: 600px;
+  width: 10px;
+  border: 3px;
+  border-style: none double none none;
+  position: absolute;
+  right: 50%;
 }
 
-.emoji {
-  display: none;
-  padding: 1rem;
+.hrhorizantal {
+  height: 3px !important;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  background-color: #f7f5f2 !important;
+  width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  opacity: 1;
+  margin: 0;
 }
 
-.emoji span {
-  font-size: 4rem;
-  padding: 0 0.5rem;
+.hrhorizantalMobile {
+  height: 3px !important;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  background-color: #f7f5f2 !important;
+  width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  opacity: 1;
+  margin: 0;
 }
 
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
-
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-
-  li span {
-    font-size: calc(3.375rem * var(--smaller));
-  }
+.hrverticalMobile {
+  margin-top: 20px;
+  height: 250px;
+  width: 10px;
+  border: 3px;
+  border-style: none double none none;
+  position: absolute;
+  right: 50%;
 }

@@ -7,20 +7,13 @@ import GuestBook from "./Components/GuestBook";
 import WeddingInfo from "./Components/WeddingInfo";
 import Gallery from "./Components/Gallery";
 import Videos from "./Components/Videos";
-import ReactPlayer from "react-player";
+import IsRSVP from "./Components/IsRSVP.js";
 
 const Layout = () => {
   const DefaultContainer = () => {
     return (
       <div>
         <NavScript />
-        <ReactPlayer
-          url={"https://www.youtube.com/watch?v=lgs6Tbs6fXE&t=2s"}
-          playing={true}
-          width={"0px"}
-          height={"0px"}
-          volume={0.2}
-        ></ReactPlayer>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/RSVP" element={<RSVP />}></Route>
@@ -28,6 +21,7 @@ const Layout = () => {
           <Route path="/GuestBook" element={<GuestBook />}></Route>
           <Route path="/WeddingInfo" element={<WeddingInfo />}></Route>
           <Route path="/Videos" element={<Videos />}></Route>
+          <Route path="/isRSVP" element={<IsRSVP />}></Route>
         </Routes>
       </div>
     );

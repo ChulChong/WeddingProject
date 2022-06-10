@@ -7,6 +7,10 @@ import img2 from "/Users/chulchong/cs/wedding/src/util/IMG_2021.jpg";
 import img3 from "/Users/chulchong/cs/wedding/src/util/IMG_2238.JPG";
 import img4 from "/Users/chulchong/cs/wedding/src/util/IMG2222.JPG";
 import img5 from "/Users/chulchong/cs/wedding/src/util/IMG_9622.jpg";
+import img6 from "/Users/chulchong/cs/wedding/src/util/bqbbb.jpg";
+import img7 from "/Users/chulchong/cs/wedding/src/util/fwef.jpg";
+import img8 from "/Users/chulchong/cs/wedding/src/util/qwgwqgn.jpg";
+import img9 from "/Users/chulchong/cs/wedding/src/util/wqwqf.jpg";
 
 const Gallery = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -16,19 +20,13 @@ const Gallery = () => {
   const items = [
     {
       // Image item:
-      itemId: "sample-id",
+      itemId: "img1",
       mediaUrl: img1,
       metaData: {
         type: "image",
         height: 200,
         width: 100,
-        title: "sample-title",
-        description: "sample-description",
         focalPoint: [0, 0],
-        link: {
-          url: "http://example.com",
-          target: "_blank",
-        },
       },
     },
     {
@@ -39,13 +37,7 @@ const Gallery = () => {
         type: "image",
         height: 200,
         width: 100,
-        title: "sample-title",
-        description: "sample-description",
         focalPoint: [0, 0],
-        link: {
-          url: "http://example.com",
-          target: "_blank",
-        },
       },
     },
     {
@@ -56,13 +48,7 @@ const Gallery = () => {
         type: "image",
         height: 200,
         width: 100,
-        title: "sample-title",
-        description: "sample-description",
         focalPoint: [0, 0],
-        link: {
-          url: "http://example.com",
-          target: "_blank",
-        },
       },
     },
     {
@@ -73,13 +59,7 @@ const Gallery = () => {
         type: "image",
         height: 0,
         width: 0,
-        title: "sample-title",
-        description: "sample-description",
         focalPoint: [0, 0],
-        link: {
-          url: "http://example.com",
-          target: "_blank",
-        },
       },
     },
     {
@@ -90,13 +70,51 @@ const Gallery = () => {
         type: "image",
         height: 0,
         width: 0,
-        title: "sample-title",
-        description: "sample-description",
         focalPoint: [0, 0],
-        link: {
-          url: "http://example.com",
-          target: "_blank",
-        },
+      },
+    },
+    {
+      // Another Image item:
+      itemId: "img6",
+      mediaUrl: img6,
+      metaData: {
+        type: "image",
+        height: 0,
+        width: 0,
+        focalPoint: [30, 200],
+      },
+    },
+    {
+      // Another Image item:
+      itemId: "img7",
+      mediaUrl: img7,
+      metaData: {
+        type: "image",
+        height: 300,
+        width: 150,
+        focalPoint: [0, 0],
+      },
+    },
+    {
+      // Another Image item:
+      itemId: "img8",
+      mediaUrl: img8,
+      metaData: {
+        type: "image",
+        height: 0,
+        width: 0,
+        focalPoint: [10, 20],
+      },
+    },
+    {
+      // Another Image item:
+      itemId: "img9",
+      mediaUrl: img9,
+      metaData: {
+        type: "image",
+        height: 100,
+        width: 50,
+        focalPoint: [0, 0],
       },
     },
   ];
@@ -104,8 +122,8 @@ const Gallery = () => {
   // The options of the gallery (from the playground current state)
   const options = {
     galleryLayout: 0,
-    collageDensity: "0.2",
-    galleryMargin: 100,
+    collageDensity: "0.1",
+    galleryMargin: 20,
     hoveringBehaviour: "NEVER_SHOW",
     scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",
@@ -116,7 +134,7 @@ const Gallery = () => {
   const Mobileoptions = {
     galleryLayout: 0,
     collageDensity: "0.2",
-    galleryMargin: 40,
+    galleryMargin: 20,
     hoveringBehaviour: "NEVER_SHOW",
     scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",

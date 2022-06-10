@@ -1,7 +1,7 @@
 import { React } from "react";
 import GuestBookReader from "./GuesBookReader";
 import GuestBookWriter from "./GuestBookWriter";
-
+import "./GuestBook.css";
 const GuestBook = () => {
   return (
     <div>

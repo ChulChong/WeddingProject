@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Nuosu+SIL&display=swap");
+
+.RSVP {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: "Nuosu SIL", serif;
+}
+
+.RSVPMobile {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: "Nuosu SIL", serif;
+}
+
+.IsRSVP {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: "Nuosu SIL", serif;
+}
+
+.IsRSVPMobile {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: "Nuosu SIL", serif;
+}
+.formcontrol {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.formcontrolMobile {
+  margin-left: 15px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.radiobutton {
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: auto;
+  width: 100%;
+}
+.radiobuttonMobile {
+  margin-left: 20px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.menuradiobutton {
+  padding-top: 10px;
+  margin-left: 25px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.menuradiobuttonMobile {
+  margin-left: 15px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.eachbutton {
+  margin-right: 50px;
+}
+.eachbuttonMobile {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.hrhorizantal {
+  height: 3px !important;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  background-color: #f7f5f2 !important;
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  opacity: 1;
+  margin: 0;
+}
+
+.inputbox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.modal {
+  font-family: "Nuosu SIL", serif;
+  text-align: center;
+}

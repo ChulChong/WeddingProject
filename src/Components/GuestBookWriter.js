@@ -27,7 +27,10 @@ const GuestBookWriter = () => {
     }
     const guestbookCollRef = collection(db, "GuestBook");
     addDoc(guestbookCollRef, User)
-      .then((response) => console.log(response))
+      .then((response) => {
+        console.log(response);
+        window.location.reload();
+      })
       .catch((error) => {
         console.log(error.message);
       });

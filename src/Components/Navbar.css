@@ -1,0 +1,48 @@
+.navbutton {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.NavBrand {
+  font-family: "Cormorant Unicase", serif;
+  text-align: center !important;
+  font-size: 40px !important;
+  margin-right: auto;
+  margin-left: auto;
+  color: black !important;
+}
+.NavBrandMobile {
+  font-family: "Cormorant Unicase", serif;
+  text-align: center !important;
+  font-size: 20px !important;
+  margin-right: auto;
+  margin-left: auto;
+  color: black !important;
+}
+.hr {
+  height: 3px !important;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  background-color: #f7f5f2 !important;
+  opacity: 1;
+  margin: 0;
+}
+.NavbarStyle {
+  font-family: "Nuosu SIL", serif;
+  text-align: center !important;
+}
+.navbar-toggle {
+  margin: 0 auto !important;
+}
+
+#navbar {
+  width: 100%;
+}
+.headerheader {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Cormorant Unicase", serif;
+}
+.chultake {
+  font-family: "Cormorant Unicase", serif;
+  float: right;
+}
