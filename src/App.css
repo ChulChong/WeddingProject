@@ -17,36 +17,3 @@
 .video {
   padding-top: 30px;
 }
-
-.weddinginfo {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-}
-.title {
-  margin-top: 20px;
-}
-.time .nameofaddress .address {
-  margin-bottom: 20px;
-}
-.message {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.weddinginfoMobile {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80vw;
-}
-.titleMobile {
-  margin-top: 20px;
-}
-.timeMobile .nameofaddressMobile .addressMobile {
-  margin-bottom: 10px;
-}
-.messageMobile {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 17px;
-}

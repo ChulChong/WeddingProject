@@ -95,20 +95,18 @@ const RSVP = ({ namedata }) => {
                 value={submitData.name}
                 onChange={handleChange}
               >
-                <Form.Label style={{ marginBottom: 20 }}></Form.Label>
-                <Form.Control
+                <Form.Label
                   type="name"
-                  placeholder={location.state.namedata}
                   name="name"
                   value={location.state.namedata}
-                  readOnly
-                  sm={2}
                   style={{
                     textAlign: "center",
                     width: "50%",
                   }}
                   className="formcontrol"
-                />
+                >
+                  Hi {location.state.namedata}!
+                </Form.Label>
               </Form.Group>
             </Row>
             {/* Yes Or No */}
@@ -222,20 +220,18 @@ const RSVP = ({ namedata }) => {
                 value={submitData.name}
                 onChange={handleChange}
               >
-                <Form.Label style={{ marginBottom: 20 }}></Form.Label>
-                <Form.Control
+                <Form.Label
                   type="name"
-                  placeholder={location.state.namedata}
                   name="name"
                   value={location.state.namedata}
-                  readOnly
-                  sm={2}
                   style={{
                     textAlign: "center",
                     width: "100%",
                   }}
                   className="formcontrolMobile"
-                />
+                >
+                  Hi {location.state.namedata}!
+                </Form.Label>
               </Form.Group>
             </Row>
             {/* Yes Or No */}
@@ -313,7 +309,7 @@ const RSVP = ({ namedata }) => {
                 />
               </Col>
             </Form.Group>
-            <div style={{ marginLeft: 0 }}>
+            <div style={{ marginLeft: -10 }}>
               <Button variant="secondary" type="submit">
                 Submit
               </Button>

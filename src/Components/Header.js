@@ -1,6 +1,6 @@
 import React from "react";
-import img from "/Users/chulchong/cs/wedding/src/util/header.JPG";
-import imgMobile from "/Users/chulchong/cs/wedding/src/util/wqwqf.jpg";
+import img from "/Users/chulchong/cs/wedding/src/util/header.png";
+import imgMobile from "/Users/chulchong/cs/wedding/src/util/wqwqf.png";
 import "./Header.css";
 import { useMediaQuery } from "react-responsive";
 const Header = () => {
@@ -19,30 +19,28 @@ const Header = () => {
           </div>
           <div className="weddingwho">
             <div className="ourname">Hannah Bae</div>
-            <div style={{ fontSize: 20 }}>and</div>
+            <div style={{ fontSize: 30 }}>and</div>
             <div className="ourname">Chul Chong</div>
           </div>
           <hr className="hrhorizantal"></hr>
           <div className="headerNext">
             <div className="row">
               <div className="column">
-                <div style={{ padding: 20, fontSize: 20 }}>Dahlonega, GA</div>
+                <div style={{ padding: 20, fontSize: 30 }}>Dahlonega, GA</div>
                 <div style={{ padding: 20, fontSize: 140 }}>H</div>
                 <div style={{ padding: 20, fontSize: 30 }}>and</div>
                 <div style={{ padding: 20, fontSize: 140 }}>C</div>
-                <div style={{ padding: 20, fontSize: 20 }}>
-                  #ChulTakesTheHannah
-                </div>
+                <div style={{ padding: 20, fontSize: 30 }}>#hyunjungchul</div>
               </div>
 
               <div className="hrvertical" />
 
               <div className="column">
-                <div style={{ padding: 20, fontSize: 20 }}>Saturday</div>
+                <div style={{ padding: 20, fontSize: 30 }}>Saturday</div>
                 <div style={{ padding: 20, fontSize: 140 }}>1</div>
                 <div style={{ padding: 20, fontSize: 30 }}>/</div>
                 <div style={{ padding: 20, fontSize: 140 }}>21</div>
-                <div style={{ padding: 20, fontSize: 20 }}>2023</div>
+                <div style={{ padding: 20, fontSize: 30 }}>2023</div>
               </div>
             </div>
           </div>
@@ -52,7 +50,7 @@ const Header = () => {
       {isTabletOrMobile && (
         <div>
           <div>
-            <img id="WeddingPic" src={imgMobile} alt="ourpicture" />
+            <img id="WeddingPicMobile" src={imgMobile} alt="ourpicture" />
             <div className="centeredMobile">WE'RE GETTING MARRIED!</div>
           </div>
           <div className="weddingwhoMobile">
@@ -68,7 +66,7 @@ const Header = () => {
                 <div style={{ fontSize: 70 }}>H</div>
                 <div style={{ fontSize: 15 }}>and</div>
                 <div style={{ fontSize: 70 }}>C</div>
-                <div style={{ fontSize: 13 }}>#ChulTakesTheHannah</div>
+                <div style={{ fontSize: 13 }}>#hyunjungchul</div>
               </div>
 
               <div className="hrverticalMobile" />
@@ -82,7 +80,10 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <hr style={{ marginBottom: 30 }} className="hrhorizantal" />
+          <hr
+            style={{ marginBottom: 30, marginTop: 30 }}
+            className="hrhorizantalMobile"
+          />
         </div>
       )}
     </div>

@@ -6,6 +6,7 @@ import {
   Marker,
 } from "react-google-maps";
 import { useMediaQuery } from "react-responsive";
+import "./WeddingInfo.css";
 
 export const WeddingInfo = () => {
   const isDesktopOrLaptop = useMediaQuery({

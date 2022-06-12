@@ -126,47 +126,44 @@ const IsRSVP = () => {
       )}
       {isTabletOrMobile && (
         <div className="IsRSVPMobile">
-          <div style={{ marginTop: 50, fontSize: 18 }}>
+          <div style={{ marginTop: 50, fontSize: 40 }}>RSVP</div>
+          <div style={{ marginTop: 30, fontSize: 18 }}>
             Please let us know your plans here by entering your name as it
             appears on your invitation.
           </div>
           <div style={{ fontSize: 18 }}>
             We hope we get to celebrate together!
           </div>
-          <Form ref={form} onSubmit={handleSubmit}>
-            <hr className="hrhorizantal"></hr>
-            <Row className="mb-3">
+          <hr className="hrhorizantalMobile"></hr>
+          <Form ref={form} onSubmit={handleSubmit} className="IsRSVPMobile">
+            <Row>
               {/* Name */}
               <Form.Group
                 as={Col}
                 controlId="forName"
-                className="mb-3"
                 value={guesswho}
                 onChange={handleChange}
               >
                 <Form.Label>
-                  <div style={{ padding: 3 }}>
-                    Please enter the first and last name of one member of your
-                    party below.
-                  </div>
-                  <div style={{ padding: 3 }}>
-                    If you're responding for you and a guest (or your family),
-                  </div>
-                  <div style={{ padding: 3 }}>
-                    you'll be able to RSVP for your entire group on the next
-                    page.
+                  <div className="formlabel">
+                    <div style={{ paddingBottom: 5 }}>
+                      Please enter the first and last name of one member of your
+                      party below. If you're responding for you and a guest (or
+                      your family), you'll be able to RSVP for your entire group
+                      on the next page.
+                    </div>
                   </div>
                 </Form.Label>
                 <Form.Control
                   type="name"
-                  placeholder="Ex. Sarah Fortune (not The Fortune Family or Dr. & Mr. Fortune."
+                  placeholder="Ex. Sarah Fortune"
                   name="name"
                   onChange={handleChange}
                   sm={2}
                   style={{
                     backgroundColor: "#f7f5f2",
                   }}
-                  className="inputbox"
+                  className="inputboxMobile"
                 />
                 <Button type="submit" variant="secondary">
                   Submit

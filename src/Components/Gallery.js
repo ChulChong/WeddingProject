@@ -2,11 +2,6 @@ import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import { useMediaQuery } from "react-responsive";
-import img1 from "/Users/chulchong/cs/wedding/src/util/IMG_1205.JPG";
-import img2 from "/Users/chulchong/cs/wedding/src/util/IMG_2021.jpg";
-import img3 from "/Users/chulchong/cs/wedding/src/util/IMG_2238.JPG";
-import img4 from "/Users/chulchong/cs/wedding/src/util/IMG2222.JPG";
-import img5 from "/Users/chulchong/cs/wedding/src/util/IMG_9622.jpg";
 import img6 from "/Users/chulchong/cs/wedding/src/util/bqbbb.jpg";
 import img7 from "/Users/chulchong/cs/wedding/src/util/fwef.jpg";
 import img8 from "/Users/chulchong/cs/wedding/src/util/qwgwqgn.jpg";
@@ -18,61 +13,6 @@ const Gallery = () => {
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const items = [
-    {
-      // Image item:
-      itemId: "img1",
-      mediaUrl: img1,
-      metaData: {
-        type: "image",
-        height: 200,
-        width: 100,
-        focalPoint: [0, 0],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img2",
-      mediaUrl: img2,
-      metaData: {
-        type: "image",
-        height: 200,
-        width: 100,
-        focalPoint: [0, 0],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img3",
-      mediaUrl: img3,
-      metaData: {
-        type: "image",
-        height: 200,
-        width: 100,
-        focalPoint: [0, 0],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img4",
-      mediaUrl: img4,
-      metaData: {
-        type: "image",
-        height: 0,
-        width: 0,
-        focalPoint: [0, 0],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img5",
-      mediaUrl: img5,
-      metaData: {
-        type: "image",
-        height: 0,
-        width: 0,
-        focalPoint: [0, 0],
-      },
-    },
     {
       // Another Image item:
       itemId: "img6",
@@ -134,9 +74,8 @@ const Gallery = () => {
   const Mobileoptions = {
     galleryLayout: 0,
     collageDensity: "0.2",
-    galleryMargin: 20,
+    galleryMargin: 0,
     hoveringBehaviour: "NEVER_SHOW",
-    scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",
     gallerySize: 100,
     imagePlacementAnimation: "SLIDE",

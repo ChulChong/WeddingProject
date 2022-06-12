@@ -1,14 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Nuosu+SIL&display=swap");
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"),
+    url("/Users/chulchong/cs/wedding/src/util/Metropolis-6Y5M1.ttf")
+      format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Unicase&display=swap");
 #WeddingPic {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
+#WeddingPicMobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100%;
+}
 .centered {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Cormorant Garamond", serif;
   position: relative;
-  color: antiquewhite;
+  color: white;
   font-size: 80px;
   width: 100%;
   top: -720px;
@@ -16,41 +32,39 @@
   transform: translate(-50%, -50%);
 }
 .centeredMobile {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Cormorant Garamond", serif;
   position: relative;
   height: auto;
-  color: antiquewhite;
-  font-size: 30px;
+  color: white;
+  font-size: 8vw;
   font-weight: 700;
   width: 100%;
-  top: -300px;
+  top: -510px;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
 }
 
 .headerNext {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .weddingwho {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Cormorant Garamond", serif;
   margin-right: auto;
   margin-left: auto;
   width: 50%;
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .weddingwhoMobile {
-  font-family: "Cormorant Unicase", serif;
+  font-family: "Cormorant Garamond", serif;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 .ourname {
@@ -124,8 +138,8 @@
 }
 
 .hrverticalMobile {
-  margin-top: 20px;
-  height: 250px;
+  margin-top: 0px;
+  height: 270px;
   width: 10px;
   border: 3px;
   border-style: none double none none;
