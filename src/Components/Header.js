@@ -1,6 +1,6 @@
 import React from "react";
-import img from "/Users/chulchong/cs/wedding/src/util/header.png";
-import imgMobile from "/Users/chulchong/cs/wedding/src/util/wqwqf.png";
+import img from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03002.jpg";
+import imgMobile from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03002.jpg";
 import "./Header.css";
 import { useMediaQuery } from "react-responsive";
 const Header = () => {

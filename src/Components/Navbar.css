@@ -9,8 +9,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Unicase&display=swap");
 
 .navbutton {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  color: black !important;
 }
 .NavBrand {
   font-family: "MyFont";
@@ -18,7 +19,8 @@
   font-size: 80px !important;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: -10px;
   color: black !important;
 }
 .NavBrandMobile {
@@ -36,9 +38,9 @@
   border-top: 1px solid black !important;
   border-bottom: 1px solid black !important;
   background-color: #f7f5f2 !important;
-  width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  width: 98vw;
+  margin-left: 15px !important;
+  margin-right: 8px !important;
   opacity: 1;
   margin: 4px;
 }
@@ -51,8 +53,9 @@
   width: 100%;
 }
 .headerheader {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
   font-family: "Cormorant Garamond", serif;
 }
 .chultake {

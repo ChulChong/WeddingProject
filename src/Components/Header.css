@@ -10,9 +10,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Unicase&display=swap");
 #WeddingPic {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 98vw;
 }
 #WeddingPicMobile {
   display: block;

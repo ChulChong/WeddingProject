@@ -2,62 +2,13 @@ import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import { useMediaQuery } from "react-responsive";
-import img6 from "/Users/chulchong/cs/wedding/src/util/bqbbb.jpg";
-import img7 from "/Users/chulchong/cs/wedding/src/util/fwef.jpg";
-import img8 from "/Users/chulchong/cs/wedding/src/util/qwgwqgn.jpg";
-import img9 from "/Users/chulchong/cs/wedding/src/util/wqwqf.jpg";
+import Imgitems from "./Imgitem";
 
 const Gallery = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const items = [
-    {
-      // Another Image item:
-      itemId: "img6",
-      mediaUrl: img6,
-      metaData: {
-        type: "image",
-        height: 0,
-        width: 0,
-        focalPoint: [30, 200],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img7",
-      mediaUrl: img7,
-      metaData: {
-        type: "image",
-        height: 300,
-        width: 150,
-        focalPoint: [0, 0],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img8",
-      mediaUrl: img8,
-      metaData: {
-        type: "image",
-        height: 0,
-        width: 0,
-        focalPoint: [10, 20],
-      },
-    },
-    {
-      // Another Image item:
-      itemId: "img9",
-      mediaUrl: img9,
-      metaData: {
-        type: "image",
-        height: 100,
-        width: 50,
-        focalPoint: [0, 0],
-      },
-    },
-  ];
 
   // The options of the gallery (from the playground current state)
   const options = {
@@ -99,7 +50,7 @@ const Gallery = () => {
       {isDesktopOrLaptop && (
         <div className="Gallery">
           <ProGallery
-            items={items}
+            items={Imgitems}
             options={options}
             container={container}
             eventsListener={eventsListener}
@@ -110,7 +61,7 @@ const Gallery = () => {
       {isTabletOrMobile && (
         <div className="Gallery">
           <ProGallery
-            items={items}
+            items={Imgitems}
             options={Mobileoptions}
             container={container}
             eventsListener={eventsListener}

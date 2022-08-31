@@ -18,7 +18,7 @@ const NavScript = () => {
       {isDesktopOrLaptop && (
         <div>
           <div className="headerheader">
-            Jan 21, 2023 Dahlonega, GA
+            Jan 21, 2023
             <span className="chultake"> #hyunjungchul</span>
           </div>
           <div className="d-flex justify-content-center">
