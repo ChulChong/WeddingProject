@@ -74,7 +74,7 @@ export const WeddingInfo = () => {
             </div>
             <div className="receptionMobile">
               <h1 className="titleMobile">Reception</h1>
-              <div className="timeMobile">6:00 PM, Jan 21st, 2023</div>
+              <div className="timeMobile">5:00 PM, Jan 21st, 2023</div>
               <div style={{ marginBottom: 10 }} className="timeMobile">
                 Reception location will be the same.
               </div>

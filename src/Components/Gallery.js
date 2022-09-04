@@ -25,7 +25,7 @@ const Gallery = () => {
   const Mobileoptions = {
     galleryLayout: 0,
     collageDensity: "0.2",
-    galleryMargin: 0,
+    galleryMargin: 10,
     hoveringBehaviour: "NEVER_SHOW",
     imageHoverAnimation: "ZOOM_IN",
     gallerySize: 100,

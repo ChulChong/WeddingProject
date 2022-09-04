@@ -119,10 +119,12 @@ const IsRSVP = () => {
       )}
       {isTabletOrMobile && (
         <div className="IsRSVPMobile">
-          <div style={{ marginTop: 50, fontSize: 40 }}>RSVP</div>
+          <div style={{ marginTop: 30, fontSize: "1.3rem" }}>RSVP</div>
           <div style={{ marginTop: 30, fontSize: 18 }}>
-            Please let us know your plans here by entering your name as it
-            appears on your invitation.
+            Please let us know your plans here by entering
+          </div>
+          <div style={{ fontSize: 18 }}>
+            your name as it appears on your invitation.
           </div>
           <div style={{ fontSize: 18 }}>
             We hope we get to celebrate together!
@@ -140,16 +142,14 @@ const IsRSVP = () => {
                 <Form.Label>
                   <div className="formlabel">
                     <div style={{ paddingBottom: 5 }}>
-                      Please enter the first and last name of one member of your
-                      party below. If you're responding for you and a guest (or
-                      your family), you'll be able to RSVP for your entire group
-                      on the next page.
+                      Please enter the first and last name of one member
                     </div>
+                    <div style={{ paddingBottom: 5 }}>of your party below.</div>
                   </div>
                 </Form.Label>
                 <Form.Control
                   type="name"
-                  placeholder="Ex. Sarah Fortune"
+                  placeholder="Ex. James Kim (not the Kim Family or Mr. & Mrs. Kim)"
                   name="name"
                   onChange={handleChange}
                   sm={2}
