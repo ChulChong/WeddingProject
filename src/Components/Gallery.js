@@ -14,7 +14,7 @@ const Gallery = () => {
   const options = {
     galleryLayout: 0,
     collageDensity: "0.1",
-    galleryMargin: 20,
+    galleryMargin: 30,
     hoveringBehaviour: "NEVER_SHOW",
     scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",
@@ -48,7 +48,7 @@ const Gallery = () => {
   return (
     <div>
       {isDesktopOrLaptop && (
-        <div className="Gallery">
+        <div className="Gallery" style={{ marginRight: 25 }}>
           <ProGallery
             items={Imgitems}
             options={options}

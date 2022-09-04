@@ -44,12 +44,12 @@ const IsRSVP = () => {
       setfailmessage(
         <div>
           <div style={{ color: "#B62C41", padding: 20 }}>
-            Hm... we can't find your name. Make sure you enter your name exactly
-            as it appears on your invitation.
+            Hmm... We can't find your name. Make sure you enter your name
+            exactly as it appears on your invitation.
           </div>
           <div>
-            Still having trouble? Reach out to the couple and request access to
-            their RSVP page.
+            Still having trouble? Reach out to the Hannah and Chul and request
+            access to their RSVP page.
           </div>
         </div>
       );
@@ -72,15 +72,15 @@ const IsRSVP = () => {
     <div>
       {isDesktopOrLaptop && (
         <div className="IsRSVP">
-          <div style={{ marginTop: 50, fontSize: 18 }}>
+          <div style={{ marginTop: 50, fontSize: "1.3rem" }}>
             Please let us know your plans here by entering your name as it
             appears on your invitation.
           </div>
-          <div style={{ fontSize: 18 }}>
+          <div style={{ fontSize: "1.3rem" }}>
             We hope we get to celebrate together!
           </div>
           <Form ref={form} onSubmit={handleSubmit}>
-            <hr className="hrhorizantal"></hr>
+            <hr className="hrhorizantalRSVP"></hr>
             <Row className="mb-3">
               {/* Name */}
               <Form.Group
@@ -95,17 +95,10 @@ const IsRSVP = () => {
                     Please enter the first and last name of one member of your
                     party below.
                   </div>
-                  <div style={{ padding: 3 }}>
-                    If you're responding for you and a guest (or your family),
-                  </div>
-                  <div style={{ padding: 3 }}>
-                    you'll be able to RSVP for your entire group on the next
-                    page.
-                  </div>
                 </Form.Label>
                 <Form.Control
                   type="name"
-                  placeholder="Ex. Sarah Fortune (not The Fortune Family or Dr. & Mr. Fortune."
+                  placeholder="Ex. James Kim (not The Kim Family or Mr. & Mrs. Kim)"
                   name="name"
                   onChange={handleChange}
                   sm={2}

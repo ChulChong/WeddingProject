@@ -12,11 +12,18 @@
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
   color: black !important;
+  font-size: 1.3rem;
+}
+
+.navbuttonMobile {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  color: black !important;
 }
 .NavBrand {
-  font-family: "MyFont";
+  font-family: "JesofinSans";
   text-align: center !important;
-  font-size: 80px !important;
+  font-size: 60px !important;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -25,13 +32,13 @@
 }
 .NavBrandMobile {
   display: inline-block !important;
-  font-family: "MyFont";
-  font-size: 40px !important;
+  font-family: "JesofinSans";
+  font-size: 25px !important;
   color: black !important;
   height: 50px;
   margin-top: 5px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 .hr {
   height: 3px !important;
@@ -39,8 +46,8 @@
   border-bottom: 1px solid black !important;
   background-color: #f7f5f2 !important;
   width: 98vw;
-  margin-left: 15px !important;
-  margin-right: 8px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   opacity: 1;
   margin: 4px;
 }
@@ -57,10 +64,12 @@
   padding-top: 10px;
   padding-right: 20px;
   font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
 }
 .chultake {
   font-family: "Cormorant Garamond", serif;
   float: right;
+  font-size: 1.3rem;
 }
 .container {
   margin-left: -5px;

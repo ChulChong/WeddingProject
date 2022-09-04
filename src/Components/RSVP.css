@@ -7,6 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  font-size: 1.3rem;
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -27,6 +28,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  font-size: 1.3rem;
   font-family: "Cormorant Garamond", serif;
 }
 .formlabel {
@@ -92,20 +94,6 @@
   padding-bottom: 10px;
 }
 
-.hrhorizantal {
-  height: 3px !important;
-  border-top: 1px solid black !important;
-  border-bottom: 1px solid black !important;
-  background-color: #f7f5f2 !important;
-  width: 60%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 50px !important;
-  margin-bottom: 50px !important;
-  opacity: 1;
-  margin: 0;
-}
-
 .inputbox {
   margin-left: auto;
   margin-right: auto;
@@ -133,6 +121,20 @@
   border-bottom: 1px solid black !important;
   background-color: #f7f5f2 !important;
   width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  opacity: 1;
+  margin: 0;
+}
+
+.hrhorizantalRSVP {
+  height: 3px !important;
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  background-color: #f7f5f2 !important;
+  width: 30% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: 50px !important;

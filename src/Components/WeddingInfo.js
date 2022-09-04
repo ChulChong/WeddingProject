@@ -32,7 +32,7 @@ export const WeddingInfo = () => {
       {isDesktopOrLaptop && (
         <div className="weddinginfo">
           <div className="ceremony">
-            <h1 className="title">ceremony</h1>
+            <h1 className="title">Ceremony</h1>
             <div className="time">4:00 PM, Jan 21st, 2023</div>
             <div className="nameofaddress">Juliette Chapel</div>
             <div className="address">497 Hwy 52 West, Dahlonega, GA 30533</div>
@@ -40,11 +40,14 @@ export const WeddingInfo = () => {
               Please arrive 15 minutes before ceremony commences to allow time
               for greeting and seatings.
             </div>
-            <div className="message">
-              Join us for celebratory drinks at our ceremony location following
-              our vows.
+            <div className="reception">
+              <h1 className="title">Reception</h1>
+              <div className="time">5:00 PM, Jan 21st, 2023</div>
+              <div style={{ marginBottom: 50 }}>
+                Reception location will be the same.
+              </div>
             </div>
-            <div className="map">
+            <div className="map" style={{ marginBottom: 50 }}>
               <WrappedMap
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
             libraries=geometry,drawing,places&key=AIzaSyCUb-mCFuZbZYh9CLr0xuJM-PLEhdzdQD4"
@@ -54,29 +57,27 @@ export const WeddingInfo = () => {
               />
             </div>
           </div>
-          <div className="reception">
-            <h1 className="title">reception</h1>
-            <div className="time">6:00 PM, Jan 21st, 2023</div>
-            <div className="message">reception location will be the same.</div>
-          </div>
         </div>
       )}
       {isTabletOrMobile && (
         <div className="weddinginfoMobile">
           <div className="ceremonyMobile">
-            <h1 className="titleMobile">ceremony</h1>
+            <h1 className="titleMobile">Ceremony</h1>
             <div className="timeMobile">4:00 PM, Jan 21st, 2023</div>
-            <div className="nameofaddressMobile">Juliette Chapel</div>
-            <div className="addressMobile">
+            <div className="timeMobile">Juliette Chapel</div>
+            <div className="timeMobile">
               497 Hwy 52 West, Dahlonega, GA 30533
             </div>
             <div className="messageMobile">
               Please arrive 15 minutes before ceremony commences to allow time
               for greeting and seatings.
             </div>
-            <div className="messageMobile">
-              Join us for celebratory drinks at our ceremony location following
-              our vows.
+            <div className="receptionMobile">
+              <h1 className="titleMobile">Reception</h1>
+              <div className="timeMobile">6:00 PM, Jan 21st, 2023</div>
+              <div style={{ marginBottom: 10 }} className="timeMobile">
+                Reception location will be the same.
+              </div>
             </div>
             <div className="mapMobile">
               <WrappedMap
@@ -86,13 +87,6 @@ export const WeddingInfo = () => {
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
               />
-            </div>
-          </div>
-          <div className="receptionMobile">
-            <h1 className="titleMobile">reception</h1>
-            <div className="timeMobile">6:00 PM, Jan 21st, 2023</div>
-            <div className="messageMobile">
-              reception location will be the same.
             </div>
           </div>
         </div>

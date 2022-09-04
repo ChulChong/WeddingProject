@@ -28,7 +28,7 @@ const NavScript = () => {
               to="/"
               onClick={() => setExpanded(false)}
             >
-              <div>H a n n a h & C h u l</div>
+              <div>H A N N A H & C H U L</div>
             </Nav.Link>
           </div>
           <div className="d-flex justify-content-center">
@@ -112,7 +112,7 @@ const NavScript = () => {
               to="/"
               onClick={() => setExpanded(false)}
             >
-              H a n n a h & C h u l
+              H A N N A H & C H U L
             </Nav.Link>
             <VscListFlat
               className="menubtn"
@@ -131,7 +131,7 @@ const NavScript = () => {
                       as={Link}
                       to="/"
                       onClick={() => setExpanded(false)}
-                      className="navbutton"
+                      className="navbuttonMobile"
                     >
                       Home
                     </Nav.Link>
@@ -139,6 +139,7 @@ const NavScript = () => {
                       as={Link}
                       to="/WeddingInfo"
                       onClick={() => setExpanded(false)}
+                      className="navbuttonMobile"
                     >
                       Information
                     </Nav.Link>
@@ -146,6 +147,7 @@ const NavScript = () => {
                       as={Link}
                       to="/Gallery"
                       onClick={() => setExpanded(false)}
+                      className="navbuttonMobile"
                     >
                       Gallery
                     </Nav.Link>
@@ -153,6 +155,7 @@ const NavScript = () => {
                       as={Link}
                       to="/IsRSVP"
                       onClick={() => setExpanded(false)}
+                      className="navbuttonMobile"
                     >
                       RSVP
                     </Nav.Link>
@@ -162,6 +165,7 @@ const NavScript = () => {
                       to="/Registry"
                       rel="noreferrer noopener"
                       onClick={() => setExpanded(false)}
+                      className="navbuttonMobile"
                     >
                       Registry
                     </Nav.Link>
@@ -169,6 +173,7 @@ const NavScript = () => {
                       as={Link}
                       to="/Videos"
                       onClick={() => setExpanded(false)}
+                      className="navbuttonMobile"
                     >
                       Videos
                     </Nav.Link>

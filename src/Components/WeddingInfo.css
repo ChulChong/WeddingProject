@@ -5,6 +5,9 @@
   margin-right: auto;
   width: 50vw;
   font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
 }
 .title {
   margin-top: 20px;
@@ -22,12 +25,15 @@
   margin-right: auto;
   width: 80vw;
   font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
 }
 .titleMobile {
   margin-top: 20px;
 }
-.timeMobile .nameofaddressMobile .addressMobile {
-  margin-bottom: 10px;
+.timeMobile {
+  font-size: 17px;
 }
 .messageMobile {
   margin-top: 20px;
