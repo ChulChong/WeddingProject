@@ -14,7 +14,7 @@ const RSVP = ({ namedata }) => {
   const [disabledSetting, setDisabled] = useState(false);
   const [Modalshow, setModalShow] = useState(false);
   const [submitData, updateSubmitData] = useState({
-    name: namedatabase,
+    name: "",
     yesorno: "",
     menu: "",
   });
@@ -33,10 +33,10 @@ const RSVP = ({ namedata }) => {
   //sendEmail function
   const sendEmail = (e) => {
     emailjs
-      .sendForm(
+      .send(
         "service_a2fnmcp",
         "template_bgqnqyf",
-        form.current,
+        submitData,
         "fx2d6LDOMEEW1KFM7"
       )
       .then(
@@ -60,7 +60,6 @@ const RSVP = ({ namedata }) => {
   //handle submit function
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(submitData);
     sendEmail(submitData);
     const RSVPREF = ref(db, "RSVP/" + submitData.name);
     update(RSVPREF, submitData);
@@ -85,30 +84,23 @@ const RSVP = ({ namedata }) => {
     <div>
       {isDesktopOrLaptop && (
         <div className="RSVP">
-          <Form ref={form} onSubmit={handleSubmit}>
+          <Form
+            ref={form}
+            onSubmit={handleSubmit}
+            name="name"
+            value={submitData.name}
+          >
+            {/* Name */}
             <Row className="mb-3">
               {/* Name */}
-              <Form.Group
-                as={Col}
-                controlId="forName"
-                className="mb-3"
-                value={submitData.name}
-                onChange={handleChange}
+
+              <Form.Label
+                style={{ fontSize: "2.5rem", fontFamily: "JesofinSans" }}
               >
-                <Form.Label
-                  type="name"
-                  name="name"
-                  value={location.state.namedata}
-                  style={{
-                    textAlign: "center",
-                    width: "50%",
-                  }}
-                  className="formcontrol"
-                >
-                  Hi {location.state.namedata}!
-                </Form.Label>
-              </Form.Group>
+                Hi {namedatabase}!
+              </Form.Label>
             </Row>
+
             {/* Yes Or No */}
             <Form.Group
               as={Row}
@@ -211,23 +203,13 @@ const RSVP = ({ namedata }) => {
       {isTabletOrMobile && (
         <div className="RSVPMobile">
           <Form ref={form} onSubmit={handleSubmit}>
-            <Row className="mb-3">
+            <Row className="mb-3" name="name">
               {/* Name */}
-              <Form.Group
-                as={Col}
-                controlId="forName"
-                className="mb-3"
-                value={submitData.name}
-                onChange={handleChange}
-              >
+              <Form.Group as={Col}>
                 <Form.Label
                   type="name"
                   name="name"
-                  value={location.state.namedata}
-                  style={{
-                    textAlign: "center",
-                    width: "100%",
-                  }}
+                  style={{ fontSize: "2rem", fontFamily: "JesofinSans" }}
                   className="formcontrolMobile"
                 >
                   Hi {location.state.namedata}!

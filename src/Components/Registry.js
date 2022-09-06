@@ -16,7 +16,7 @@ const Registry = () => {
 
   useEffect(() => {
     zolaFunction(document, "script", "zola-wjs");
-  });
+  }, []);
 
   return (
     <div>

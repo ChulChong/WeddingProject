@@ -72,7 +72,16 @@ const IsRSVP = () => {
     <div>
       {isDesktopOrLaptop && (
         <div className="IsRSVP">
-          <div style={{ marginTop: 50, fontSize: "1.3rem" }}>
+          <div
+            style={{
+              marginTop: 50,
+              fontSize: "3rem",
+              fontFamily: "JesofinSans",
+            }}
+          >
+            RSVP
+          </div>
+          <div style={{ marginTop: 40, fontSize: "1.3rem" }}>
             Please let us know your plans here by entering your name as it
             appears on your invitation.
           </div>
@@ -119,7 +128,15 @@ const IsRSVP = () => {
       )}
       {isTabletOrMobile && (
         <div className="IsRSVPMobile">
-          <div style={{ marginTop: 30, fontSize: "1.3rem" }}>RSVP</div>
+          <div
+            style={{
+              marginTop: 30,
+              fontSize: "1.3rem",
+              fontFamily: "JesofinSans",
+            }}
+          >
+            RSVP
+          </div>
           <div style={{ marginTop: 30, fontSize: 18 }}>
             Please let us know your plans here by entering
           </div>

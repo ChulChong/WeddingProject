@@ -32,7 +32,9 @@ export const WeddingInfo = () => {
       {isDesktopOrLaptop && (
         <div className="weddinginfo">
           <div className="ceremony">
-            <h1 className="title">Ceremony</h1>
+            <h1 className="title" style={{ fontFamily: "JesofinSansThin" }}>
+              Ceremony
+            </h1>
             <div className="time">4:00 PM, Jan 21st, 2023</div>
             <div className="nameofaddress">Juliette Chapel</div>
             <div className="address">497 Hwy 52 West, Dahlonega, GA 30533</div>
@@ -41,7 +43,9 @@ export const WeddingInfo = () => {
               for greeting and seatings.
             </div>
             <div className="reception">
-              <h1 className="title">Reception</h1>
+              <h1 className="title" style={{ fontFamily: "JesofinSansThin" }}>
+                Reception
+              </h1>
               <div className="time">5:00 PM, Jan 21st, 2023</div>
               <div style={{ marginBottom: 50 }}>
                 Reception location will be the same.
@@ -62,7 +66,12 @@ export const WeddingInfo = () => {
       {isTabletOrMobile && (
         <div className="weddinginfoMobile">
           <div className="ceremonyMobile">
-            <h1 className="titleMobile">Ceremony</h1>
+            <h1
+              className="titleMobile"
+              style={{ fontFamily: "JesofinSansThin" }}
+            >
+              Ceremony
+            </h1>
             <div className="timeMobile">4:00 PM, Jan 21st, 2023</div>
             <div className="timeMobile">Juliette Chapel</div>
             <div className="timeMobile">
@@ -73,13 +82,18 @@ export const WeddingInfo = () => {
               for greeting and seatings.
             </div>
             <div className="receptionMobile">
-              <h1 className="titleMobile">Reception</h1>
+              <h1
+                className="titleMobile"
+                style={{ fontFamily: "JesofinSansThin" }}
+              >
+                Reception
+              </h1>
               <div className="timeMobile">5:00 PM, Jan 21st, 2023</div>
               <div style={{ marginBottom: 10 }} className="timeMobile">
                 Reception location will be the same.
               </div>
             </div>
-            <div className="mapMobile">
+            <div className="mapMobile" style={{ marginBottom: 20 }}>
               <WrappedMap
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
             libraries=geometry,drawing,places&key=AIzaSyCUb-mCFuZbZYh9CLr0xuJM-PLEhdzdQD4"
