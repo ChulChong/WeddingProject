@@ -48,7 +48,7 @@ const Gallery = () => {
   return (
     <div>
       {isDesktopOrLaptop && (
-        <div className="Gallery" style={{ marginRight: 25 }}>
+        <div className="Gallery" style={{ marginTop: -30, marginRight: 25 }}>
           <ProGallery
             items={Imgitems}
             options={options}

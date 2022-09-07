@@ -22,7 +22,7 @@ const Header = () => {
           </div>
           <div className="weddingwho">
             <div className="ourname">Hannah Bae</div>
-            <div style={{ fontSize: "1.5rem", marginBottom: 10 }}>and</div>
+            <div style={{ fontSize: "1.5rem", marginBottom: 11 }}>and</div>
             <div className="ourname">Chul Chong</div>
           </div>
           <hr className="hrhorizantal"></hr>

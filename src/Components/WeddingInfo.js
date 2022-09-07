@@ -32,7 +32,7 @@ export const WeddingInfo = () => {
       {isDesktopOrLaptop && (
         <div className="weddinginfo">
           <div className="ceremony">
-            <h1 className="title" style={{ fontFamily: "JesofinSansThin" }}>
+            <h1 className="title" style={{ fontFamily: "JesofinSans" }}>
               Ceremony
             </h1>
             <div className="time">4:00 PM, Jan 21st, 2023</div>
@@ -43,7 +43,7 @@ export const WeddingInfo = () => {
               for greeting and seatings.
             </div>
             <div className="reception">
-              <h1 className="title" style={{ fontFamily: "JesofinSansThin" }}>
+              <h1 className="title" style={{ fontFamily: "JesofinSans" }}>
                 Reception
               </h1>
               <div className="time">5:00 PM, Jan 21st, 2023</div>
@@ -66,10 +66,7 @@ export const WeddingInfo = () => {
       {isTabletOrMobile && (
         <div className="weddinginfoMobile">
           <div className="ceremonyMobile">
-            <h1
-              className="titleMobile"
-              style={{ fontFamily: "JesofinSansThin" }}
-            >
+            <h1 className="titleMobile" style={{ fontFamily: "JesofinSans" }}>
               Ceremony
             </h1>
             <div className="timeMobile">4:00 PM, Jan 21st, 2023</div>
@@ -82,10 +79,7 @@ export const WeddingInfo = () => {
               for greeting and seatings.
             </div>
             <div className="receptionMobile">
-              <h1
-                className="titleMobile"
-                style={{ fontFamily: "JesofinSansThin" }}
-              >
+              <h1 className="titleMobile" style={{ fontFamily: "JesofinSans" }}>
                 Reception
               </h1>
               <div className="timeMobile">5:00 PM, Jan 21st, 2023</div>
