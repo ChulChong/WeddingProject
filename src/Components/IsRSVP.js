@@ -30,8 +30,10 @@ const IsRSVP = () => {
   }, []);
   const isMatched = () => {
     if (datawho.name === "" || guesswho.name === "") {
+      console.log("here.");
       return;
     }
+    console.log(datawho);
     if (
       datawho.some((v) => v.name.toUpperCase() === guesswho.name.toUpperCase())
     ) {
