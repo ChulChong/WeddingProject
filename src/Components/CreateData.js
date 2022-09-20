@@ -27,13 +27,35 @@ const CreateData = () => {
   return (
     <div
       style={{
-        fontSize: "2.5rem",
+        fontSize: "1.5rem",
         textAlign: "center",
+        fontFamily: "JesofinSans",
+        margin: 30,
       }}
     >
       <Form>
-        <Form.Control type={"text"} onChange={handleToChange}></Form.Control>
-        <Button onClick={CreateDatafunction}>submit</Button>
+        <div>This is a secret system page to create RSVP data.</div>
+        <Form.Control
+          type={"text"}
+          onChange={handleToChange}
+          style={{
+            fontSize: "1.5rem",
+            textAlign: "center",
+            fontFamily: "JesofinSans",
+            margin: 30,
+          }}
+        ></Form.Control>
+        <Button
+          onClick={CreateDatafunction}
+          style={{
+            fontSize: "1.5rem",
+            textAlign: "center",
+            fontFamily: "JesofinSans",
+            margin: 30,
+          }}
+        >
+          submit
+        </Button>
       </Form>
     </div>
   );
