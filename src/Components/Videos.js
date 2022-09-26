@@ -21,6 +21,10 @@ const Videos = () => {
                 height={"60vh"}
               ></ReactPlayer>
             </div>
+            <div className="footer" style={{ marginTop: 20 }}>
+              <div>Copyright© 2022 Chul Chong</div>
+              <div>Designed by Hannah Bae</div>
+            </div>
           </div>
         </div>
       )}
@@ -35,6 +39,10 @@ const Videos = () => {
                 height={"20vh"}
               ></ReactPlayer>
             </div>
+          </div>
+          <div className="footermobile" style={{ marginTop: 20 }}>
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
           </div>
         </div>
       )}

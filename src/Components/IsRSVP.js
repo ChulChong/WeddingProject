@@ -45,7 +45,7 @@ const IsRSVP = () => {
     } else {
       setfailmessage(
         <div>
-          <div style={{ color: "#B62C41", padding: 20 }}>
+          <div style={{ color: "#B62C41" }}>
             Hmm... We can't find your name. Make sure you enter your name
             exactly as it appears on your invitation.
           </div>
@@ -119,13 +119,21 @@ const IsRSVP = () => {
                   }}
                   className="inputbox"
                 />
-                <Button type="submit" variant="secondary">
+                <Button
+                  type="submit"
+                  variant="secondary"
+                  style={{ marginLeft: 20 }}
+                >
                   Submit
                 </Button>
               </Form.Group>
             </Row>
           </Form>
           <div>{failmessage}</div>
+          <div className="footer" style={{ marginTop: 20 }}>
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
       {isTabletOrMobile && (
@@ -177,13 +185,21 @@ const IsRSVP = () => {
                   }}
                   className="inputboxMobile"
                 />
-                <Button type="submit" variant="secondary">
+                <Button
+                  type="submit"
+                  variant="secondary"
+                  style={{ marginLeft: 20 }}
+                >
                   Submit
                 </Button>
               </Form.Group>
             </Row>
           </Form>
           <div>{failmessage}</div>
+          <div className="footermobile" style={{ marginTop: 20 }}>
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
     </div>

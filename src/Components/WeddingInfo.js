@@ -66,6 +66,10 @@ export const WeddingInfo = () => {
                 mapElement={<div style={{ height: `100%` }} />}
               />
             </div>
+            <div className="footer">
+              <div>Copyright© 2022 Chul Chong</div>
+              <div>Designed by Hannah Bae</div>
+            </div>
           </div>
         </div>
       )}
@@ -107,6 +111,10 @@ export const WeddingInfo = () => {
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
               />
+            </div>
+            <div className="footermobile">
+              <div>Copyright© 2022 Chul Chong</div>
+              <div>Designed by Hannah Bae</div>
             </div>
           </div>
         </div>

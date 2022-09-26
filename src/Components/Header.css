@@ -167,3 +167,21 @@
 .paddingright {
   margin-right: 8vw;
 }
+
+.footer {
+  font-family: "JesofinSansThin";
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
+.footermobile {
+  font-family: "JesofinSansThin";
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}

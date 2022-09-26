@@ -176,10 +176,14 @@ const RSVP = ({ namedata }) => {
                 />
               </Col>
             </Form.Group>
-            <div style={{ marginLeft: -20 }}>
+            <div>
               <Button variant="secondary" type="submit">
                 Submit
               </Button>
+            </div>
+            <div className="footer" style={{ marginTop: 20 }}>
+              <div>Copyright© 2022 Chul Chong</div>
+              <div>Designed by Hannah Bae</div>
             </div>
           </Form>
           <Modal show={Modalshow} onHide={handleClose} className="modal">
@@ -291,10 +295,14 @@ const RSVP = ({ namedata }) => {
                 />
               </Col>
             </Form.Group>
-            <div style={{ marginLeft: -10 }}>
+            <div>
               <Button variant="secondary" type="submit">
                 Submit
               </Button>
+            </div>
+            <div className="footermobile" style={{ marginTop: 20 }}>
+              <div>Copyright© 2022 Chul Chong</div>
+              <div>Designed by Hannah Bae</div>
             </div>
           </Form>
           <Modal show={Modalshow} onHide={handleClose} className="modal">

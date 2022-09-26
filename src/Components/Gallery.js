@@ -48,25 +48,39 @@ const Gallery = () => {
   return (
     <div>
       {isDesktopOrLaptop && (
-        <div className="Gallery" style={{ marginTop: -30, marginRight: 25 }}>
-          <ProGallery
-            items={Imgitems}
-            options={options}
-            container={container}
-            eventsListener={eventsListener}
-            scrollingElement={scrollingElement}
-          />
+        <div>
+          {" "}
+          <div className="Gallery" style={{ marginTop: -30, marginRight: 25 }}>
+            <ProGallery
+              items={Imgitems}
+              options={options}
+              container={container}
+              eventsListener={eventsListener}
+              scrollingElement={scrollingElement}
+            />
+          </div>
+          <div className="footer">
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
       {isTabletOrMobile && (
-        <div className="Gallery">
-          <ProGallery
-            items={Imgitems}
-            options={Mobileoptions}
-            container={container}
-            eventsListener={eventsListener}
-            scrollingElement={scrollingElement}
-          />
+        <div>
+          {" "}
+          <div className="Gallery">
+            <ProGallery
+              items={Imgitems}
+              options={Mobileoptions}
+              container={container}
+              eventsListener={eventsListener}
+              scrollingElement={scrollingElement}
+            />
+          </div>
+          <div className="footermobile">
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
     </div>

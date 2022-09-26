@@ -114,6 +114,10 @@ const Header = () => {
             </div>
           </div>
           <hr className="hrhorizantal" />
+          <div className="footer">
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
       {isTabletOrMobile && (
@@ -168,6 +172,10 @@ const Header = () => {
             style={{ marginBottom: 30, marginTop: 30 }}
             className="hrhorizantalMobile"
           />
+          <div className="footermobile" style={{ marginTop: -20 }}>
+            <div>Copyright© 2022 Chul Chong</div>
+            <div>Designed by Hannah Bae</div>
+          </div>
         </div>
       )}
     </div>
