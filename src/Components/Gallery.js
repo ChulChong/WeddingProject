@@ -2,7 +2,8 @@ import React from "react";
 import { ProGallery } from "pro-gallery";
 import "pro-gallery/dist/statics/main.css";
 import { useMediaQuery } from "react-responsive";
-import Imgitems from "./Imgitem";
+import NewYork from "./NewYork";
+import Montaluce from "./Montaluce";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
@@ -16,7 +17,7 @@ const Gallery = () => {
   const options = {
     galleryLayout: 0,
     collageDensity: "0.1",
-    galleryMargin: 30,
+    galleryMargin: 0,
     hoveringBehaviour: "NEVER_SHOW",
     scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",
@@ -26,7 +27,7 @@ const Gallery = () => {
 
   const Mobileoptions = {
     galleryLayout: 0,
-    collageDensity: "0.2",
+    collageDensity: "0.1",
     galleryMargin: 10,
     hoveringBehaviour: "NEVER_SHOW",
     imageHoverAnimation: "ZOOM_IN",
@@ -56,10 +57,10 @@ const Gallery = () => {
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
                 <div
                   className="Gallery"
-                  style={{ marginTop: -40, marginRight: 25 }}
+                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
                 >
                   <ProGallery
-                    items={Imgitems}
+                    items={NewYork}
                     options={options}
                     container={container}
                     eventsListener={eventsListener}
@@ -68,8 +69,17 @@ const Gallery = () => {
                 </div>
               </Tab>
               <Tab eventKey="Montaluce Winery" title="Montaluce Winery, GA">
-                <div style={{ textAlign: "center", margin: 300 }}>
-                  Will be updated!
+                <div
+                  className="Gallery"
+                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
+                >
+                  <ProGallery
+                    items={Montaluce}
+                    options={options}
+                    container={container}
+                    eventsListener={eventsListener}
+                    scrollingElement={scrollingElement}
+                  />
                 </div>
               </Tab>
             </Tabs>
@@ -86,7 +96,7 @@ const Gallery = () => {
             <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
-                  items={Imgitems}
+                  items={NewYork}
                   options={Mobileoptions}
                   container={container}
                   eventsListener={eventsListener}
@@ -95,8 +105,14 @@ const Gallery = () => {
               </div>
             </Tab>
             <Tab eventKey="Montaluce Winery" title="Montaluce Winery, GA">
-              <div style={{ textAlign: "center", margin: 100 }}>
-                Will be updated!
+              <div className="Gallery" style={{ marginTop: -20 }}>
+                <ProGallery
+                  items={Montaluce}
+                  options={Mobileoptions}
+                  container={container}
+                  eventsListener={eventsListener}
+                  scrollingElement={scrollingElement}
+                />
               </div>
             </Tab>
           </Tabs>{" "}
