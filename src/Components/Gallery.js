@@ -4,6 +4,7 @@ import "pro-gallery/dist/statics/main.css";
 import { useMediaQuery } from "react-responsive";
 import NewYork from "./NewYork";
 import Montaluce from "./Montaluce";
+import ReactPlayer from "react-player";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
@@ -82,6 +83,30 @@ const Gallery = () => {
                   />
                 </div>
               </Tab>
+
+              <Tab eventKey="Chicago" title="Chicago, IL">
+                {" "}
+                <div className="Youtubevideo">
+                  <div className="video">
+                    <ReactPlayer
+                      url={"https://youtu.be/as84W0cvHWk"}
+                      playing={false}
+                      width={"80vw"}
+                      height={"60vh"}
+                    ></ReactPlayer>
+                  </div>
+                  <div
+                    className="footer"
+                    style={{
+                      marginTop: 30,
+                      fontSize: "1rem",
+                      marginBottom: 30,
+                    }}
+                  >
+                    Memories in Chicago,IL 12/4 - 12/6
+                  </div>
+                </div>
+              </Tab>
             </Tabs>
           </div>{" "}
           <div className="footer">
@@ -104,7 +129,7 @@ const Gallery = () => {
                 />
               </div>
             </Tab>
-            <Tab eventKey="Montaluce Winery" title="Montaluce Winery, GA">
+            <Tab eventKey="Montaluce Winery" title="Montaluce, GA">
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={Montaluce}
@@ -115,7 +140,25 @@ const Gallery = () => {
                 />
               </div>
             </Tab>
-          </Tabs>{" "}
+            <Tab eventKey="Chicago" title="Chicago, IL">
+              <div className="YoutubevideoMobile">
+                <div className="video">
+                  <ReactPlayer
+                    url={"https://youtu.be/as84W0cvHWk"}
+                    playing={false}
+                    width={"90vw"}
+                    height={"20vh"}
+                  ></ReactPlayer>
+                </div>
+                <div
+                  className="footer"
+                  style={{ marginTop: 30, fontSize: "1rem", marginBottom: 30 }}
+                >
+                  Memories in Chicago,IL 12/4 - 12/6
+                </div>
+              </div>
+            </Tab>
+          </Tabs>
           <div className="footermobile">
             <div>Copyright© 2022 Chul Chong</div>
             <div>Designed by Hannah Bae</div>

@@ -28,7 +28,7 @@ const NavScript = () => {
               to="/"
               onClick={() => setExpanded(false)}
             >
-              <div>H A N N A H & C H U L</div>
+              <div>H A N N A H + C H U L</div>
             </Nav.Link>
           </div>
           <div className="d-flex justify-content-center">
@@ -87,14 +87,6 @@ const NavScript = () => {
                     >
                       Registry
                     </Nav.Link>
-                    <Nav.Link
-                      as={Link}
-                      to="/Videos"
-                      onClick={() => setExpanded(false)}
-                      className="navbutton"
-                    >
-                      Videos
-                    </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
@@ -112,7 +104,7 @@ const NavScript = () => {
               to="/"
               onClick={() => setExpanded(false)}
             >
-              H A N N A H & C H U L
+              H A N N A H + C H U L
             </Nav.Link>
             <VscListFlat
               className="menubtn"
@@ -168,14 +160,6 @@ const NavScript = () => {
                       className="navbuttonMobile"
                     >
                       Registry
-                    </Nav.Link>
-                    <Nav.Link
-                      as={Link}
-                      to="/Videos"
-                      onClick={() => setExpanded(false)}
-                      className="navbuttonMobile"
-                    >
-                      Videos
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>

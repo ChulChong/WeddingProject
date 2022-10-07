@@ -28,7 +28,9 @@ const RSVP = ({ namedata }) => {
   const handleClose = () => {
     setModalShow(false);
   };
-  const handleShow = () => setModalShow(true);
+  const handleShow = () => {
+    setModalShow(true);
+  };
 
   //sendEmail function
   const sendEmail = (e) => {
@@ -190,7 +192,18 @@ const RSVP = ({ namedata }) => {
             <Modal.Header closeButton>
               <Modal.Title>RSVP submitted!</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Thank You!</Modal.Body>
+            <Modal.Body>
+              <div>
+                {doesHeCome ? (
+                  <div>
+                    <div>Thank you for joining us on our special day!</div>
+                    <div>So excited to see you 😍</div>
+                  </div>
+                ) : (
+                  <div>Thank You!</div>
+                )}
+              </div>
+            </Modal.Body>
             <Modal.Footer>
               <Button
                 as={Link}
@@ -272,6 +285,7 @@ const RSVP = ({ namedata }) => {
                   id="forSteak"
                   className="eachbuttonMobile"
                   value="Steak"
+                  style={{ fontsize: 50 }}
                 />
                 <Form.Check
                   inline
@@ -309,7 +323,18 @@ const RSVP = ({ namedata }) => {
             <Modal.Header closeButton>
               <Modal.Title>RSVP submitted!</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Thank You!</Modal.Body>
+            <Modal.Body>
+              <div>
+                {doesHeCome ? (
+                  <div>
+                    <div>Thank you for joining us on our special day!</div>
+                    <div>So excited to see you 😍</div>
+                  </div>
+                ) : (
+                  <div>Thank You!</div>
+                )}
+              </div>
+            </Modal.Body>
             <Modal.Footer>
               <Button
                 as={Link}
