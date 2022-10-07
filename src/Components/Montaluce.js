@@ -6,12 +6,10 @@ import img5 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_
 import img6 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4200.JPG";
 import img7 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4201.JPG";
 import img8 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4202.JPG";
-import img9 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4203.JPG";
 import img10 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4204.JPG";
 import img11 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4205.JPG";
 import img12 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4206.JPG";
 import img13 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4207.JPG";
-import img14 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4208.JPG";
 import img15 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4209.JPG";
 import img16 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4210.JPG";
 import img17 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4211.JPG";
@@ -26,12 +24,57 @@ import img24 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG
 const Montaluce = [
   {
     // Another Image item:
+    itemId: "img16",
+    mediaUrl: img16,
+    metaData: {
+      type: "image",
+      height: 1096,
+      width: 1620,
+      focalPoint: [0, 0],
+    },
+  },
+  {
+    // Another Image item:
     itemId: "img1",
     mediaUrl: img1,
     metaData: {
       type: "image",
       height: 1096,
       width: 1620,
+      focalPoint: [0, 0],
+    },
+  },
+  {
+    // Another Image item:
+    itemId: "img6",
+    mediaUrl: img6,
+    metaData: {
+      type: "image",
+      height: 1096,
+      width: 1620,
+      focalPoint: [0, 0],
+    },
+  },
+
+  {
+    // Another Image item:
+    itemId: "img5",
+    mediaUrl: img5,
+    metaData: {
+      type: "image",
+      height: 1096,
+      width: 1620,
+      focalPoint: [0, 0],
+    },
+  },
+  {
+    // Another Image item:
+    itemId: "img23",
+    mediaUrl: img23,
+    metaData: {
+      type: "image",
+      height: 1620,
+      width: 1096,
       focalPoint: [0, 0],
     },
   },
@@ -68,28 +111,7 @@ const Montaluce = [
       focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img5",
-    mediaUrl: img5,
-    metaData: {
-      type: "image",
-      height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
-  {
-    // Another Image item:
-    itemId: "img6",
-    mediaUrl: img6,
-    metaData: {
-      type: "image",
-      height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img7",
@@ -105,17 +127,6 @@ const Montaluce = [
     // Another Image item:
     itemId: "img8",
     mediaUrl: img8,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
-  {
-    // Another Image item:
-    itemId: "img9",
-    mediaUrl: img9,
     metaData: {
       type: "image",
       height: 1620,
@@ -167,17 +178,7 @@ const Montaluce = [
       focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img14",
-    mediaUrl: img14,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img15",
@@ -191,15 +192,16 @@ const Montaluce = [
   },
   {
     // Another Image item:
-    itemId: "img16",
-    mediaUrl: img16,
+    itemId: "img24",
+    mediaUrl: img24,
     metaData: {
       type: "image",
-      height: 1096,
-      width: 1620,
+      height: 1620,
+      width: 1096,
       focalPoint: [0, 0],
     },
   },
+
   {
     // Another Image item:
     itemId: "img17",
@@ -263,28 +265,6 @@ const Montaluce = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
-  {
-    // Another Image item:
-    itemId: "img23",
-    mediaUrl: img23,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
-  {
-    // Another Image item:
-    itemId: "img24",
-    mediaUrl: img24,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
       focalPoint: [0, 0],
     },
   },
