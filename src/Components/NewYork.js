@@ -3,7 +3,6 @@ import img2 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02432_bw.jp
 import img3 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02432.jpg";
 import img4 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02473.jpg";
 import img5 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02612.jpg";
-import img6 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02686_bw.jpg";
 import img7 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02686.jpg";
 import img9 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02932.jpg";
 import img10 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02982.jpg";
@@ -73,17 +72,6 @@ const Imgitems = [
     },
   },
 
-  {
-    // Another Image item:
-    itemId: "img6",
-    mediaUrl: img6,
-    metaData: {
-      type: "image",
-      height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
   {
     // Another Image item:
     itemId: "img7",
