@@ -10,9 +10,9 @@ import Tabs from "react-bootstrap/Tabs";
 
 const Gallery = () => {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
+    query: "(min-width: 991px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 991px)" });
 
   // The options of the gallery (from the playground current state)
   const options = {

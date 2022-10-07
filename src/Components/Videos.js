@@ -4,9 +4,9 @@ import { useMediaQuery } from "react-responsive";
 
 const Videos = () => {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
+    query: "(min-width: 991px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 991px)" });
 
   return (
     <div>

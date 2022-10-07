@@ -20,9 +20,9 @@ const RSVP = ({ namedata }) => {
   });
   const form = useRef();
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
+    query: "(min-width: 991px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 991px)" });
 
   //modal control
   const handleClose = () => {

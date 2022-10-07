@@ -30,6 +30,16 @@
   margin-bottom: -10px;
   color: black !important;
 }
+.NavBrandTablet {
+  font-family: "JesofinSans";
+  text-align: center !important;
+  font-size: 40px !important;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  color: black !important;
+}
 .NavBrandMobile {
   display: inline-block !important;
   font-family: "JesofinSans";
@@ -86,6 +96,13 @@
 .menubtn {
   float: right;
   margin-top: 1rem;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.menubtnTablet {
+  float: right;
+  margin-top: 1.5rem;
   margin-right: 10px;
   font-size: 1.5rem;
 }

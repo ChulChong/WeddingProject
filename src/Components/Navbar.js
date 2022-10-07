@@ -8,14 +8,13 @@ import "./Navbar.css";
 //Gallery, RSVP, Registry, GuestBook, Wedding info
 
 const NavScript = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  const isTablet = useMediaQuery({ minWidth: 576, maxWidth: 991 });
+  const isMobile = useMediaQuery({ maxWidth: 575 });
   const [expanded, setExpanded] = useState(false);
   return (
     <div>
-      {isDesktopOrLaptop && (
+      {isDesktop && (
         <div>
           <div className="headerheader">
             Jan 21, 2023
@@ -95,7 +94,82 @@ const NavScript = () => {
           <hr className="hr" />
         </div>
       )}
-      {isTabletOrMobile && (
+      {isTablet && (
+        <div>
+          <div className="d-flex justify-content-center">
+            <Nav.Link
+              className="NavBrandTablet p-0"
+              as={Link}
+              to="/"
+              onClick={() => setExpanded(false)}
+            >
+              <div>H A N N A H + C H U L</div>
+            </Nav.Link>
+            <VscListFlat
+              className="menubtnTablet"
+              onClick={() => setExpanded(expanded ? false : "expanded")}
+            />
+          </div>
+          <div className="d-flex justify-content-center">
+            <Navbar
+              className="NavbarStyle p-sm-0 p-0"
+              expand="lg"
+              expanded={expanded}
+            >
+              <Container>
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav>
+                    <Nav.Link
+                      as={Link}
+                      to="/"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Home
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/WeddingInfo"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Information
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/Gallery"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Gallery
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/IsRSVP"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      RSVP
+                    </Nav.Link>
+                    <Nav.Link
+                      target="_blank"
+                      as={Link}
+                      to="/Registry"
+                      rel="noreferrer noopener"
+                      onClick={() => setExpanded(false)}
+                      className="navbutton"
+                    >
+                      Registry
+                    </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </div>
+          <hr className="hr" />
+        </div>
+      )}
+      {isMobile && (
         <div>
           <div style={{ textAlign: "center", verticalAlign: "middle" }}>
             <Nav.Link
@@ -115,7 +189,7 @@ const NavScript = () => {
             <hr className="hr"></hr>
           </div>
           <div className="container">
-            <Navbar className="NavbarStyle p-0" expand="lg" expanded={expanded}>
+            <Navbar className="NavbarStyle p-0" expand="sm" expanded={expanded}>
               <Container>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav>
