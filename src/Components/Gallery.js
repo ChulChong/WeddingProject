@@ -22,7 +22,7 @@ const Gallery = () => {
     hoveringBehaviour: "NEVER_SHOW",
     scrollAnimation: "FADE_IN",
     imageHoverAnimation: "ZOOM_IN",
-    gallerySize: 100,
+    gallerySize: 1000,
     imagePlacementAnimation: "SLIDE",
   };
 
