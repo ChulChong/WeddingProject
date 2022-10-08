@@ -18,7 +18,7 @@ const NavScript = () => {
         <div>
           <div className="headerheader">
             Jan 21, 2023
-            <span className="chultake"> #hyunjungchul</span>
+            <span className="chultake"> #hannahandchul</span>
           </div>
           <div className="d-flex justify-content-center">
             <Nav.Link

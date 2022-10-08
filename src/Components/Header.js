@@ -64,7 +64,7 @@ const Header = () => {
                   className="paddingleft"
                   style={{ padding: 10, fontSize: "1.3rem" }}
                 >
-                  #hyunjungchul
+                  #hannahandchul
                 </div>
               </div>
 
@@ -148,7 +148,7 @@ const Header = () => {
                   C
                 </div>
                 <div style={{ fontSize: 13, marginTop: -10 }}>
-                  #hyunjungchul
+                  #hannahandchul
                 </div>
               </div>
 
