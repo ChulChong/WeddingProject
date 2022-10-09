@@ -1,7 +1,7 @@
 # Hannah + Chul wedding application
 
 Welcome to the Hannah and Chul's wedding application.
-[Site link](hannahandchul.com).
+[Site link](https://hannahandchul.com).
 
 ## Language used
 
