@@ -69,7 +69,7 @@ const Gallery = () => {
                   />
                 </div>
               </Tab>
-              <Tab eventKey="Montaluce Winery" title="Montaluce Winery, GA">
+              <Tab eventKey="Dahlonega" title="Dahlonega, GA">
                 <div
                   className="Gallery"
                   style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
@@ -129,7 +129,7 @@ const Gallery = () => {
                 />
               </div>
             </Tab>
-            <Tab eventKey="Montaluce Winery" title="Montaluce, GA">
+            <Tab eventKey="Dahlonega" title="Dahlonega, GA">
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={Montaluce}
