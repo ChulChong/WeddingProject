@@ -11,9 +11,8 @@
 .firebase/
 
 # Untrack one specific file
-git rm --cache /Users/chulchong/cs/wedding/src/util/config.js
-git rm --cache /Users/chulchong/cs/wedding/src/util/firestoreconfig.js
-
+config.js
+firestoreconfig.js
 
 ### Font ###
 *.fnt
