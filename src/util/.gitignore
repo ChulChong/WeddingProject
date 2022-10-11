@@ -9,6 +9,8 @@
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+/Users/chulchong/cs/wedding/src/util/config.js
+/Users/chulchong/cs/wedding/src/util/firestoreconfig.js
 
 ### Font ###
 *.fnt
