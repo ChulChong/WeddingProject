@@ -109,11 +109,9 @@ const Gallery = () => {
                     style={{
                       marginTop: 30,
                       fontSize: "1rem",
-                      marginBottom: 30,
+                      marginBottom: 50,
                     }}
-                  >
-                    Memories in Chicago,IL 12/4 - 12/6
-                  </div>
+                  ></div>
                 </div>
               </Tab>
             </Tabs>
@@ -173,11 +171,9 @@ const Gallery = () => {
                     style={{
                       marginTop: 30,
                       fontSize: "1rem",
-                      marginBottom: 30,
+                      marginBottom: 50,
                     }}
-                  >
-                    Memories in Chicago,IL 12/4 - 12/6
-                  </div>
+                  ></div>
                 </div>
               </Tab>
             </Tabs>
@@ -226,9 +222,7 @@ const Gallery = () => {
                 <div
                   className="footer"
                   style={{ marginTop: 30, fontSize: "1rem", marginBottom: 30 }}
-                >
-                  Memories in Chicago,IL 12/4 - 12/6
-                </div>
+                ></div>
               </div>
             </Tab>
           </Tabs>

@@ -13,7 +13,6 @@ import img13 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG
 import img15 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4209.JPG";
 import img16 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4210.JPG";
 import img17 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4211.JPG";
-import img18 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4212.JPG";
 import img19 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4213.JPG";
 import img20 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4214.JPG";
 import img21 from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4216.JPG";
@@ -169,29 +168,6 @@ const Montaluce = [
   },
   {
     // Another Image item:
-    itemId: "img13",
-    mediaUrl: img13,
-    metaData: {
-      type: "image",
-      height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
-
-  {
-    // Another Image item:
-    itemId: "img15",
-    mediaUrl: img15,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
-  {
-    // Another Image item:
     itemId: "img24",
     mediaUrl: img24,
     metaData: {
@@ -201,7 +177,17 @@ const Montaluce = [
       focalPoint: [0, 0],
     },
   },
-
+  {
+    // Another Image item:
+    itemId: "img13",
+    mediaUrl: img13,
+    metaData: {
+      type: "image",
+      height: 1096,
+      width: 1620,
+      focalPoint: [0, 0],
+    },
+  },
   {
     // Another Image item:
     itemId: "img17",
@@ -215,8 +201,8 @@ const Montaluce = [
   },
   {
     // Another Image item:
-    itemId: "img18",
-    mediaUrl: img18,
+    itemId: "img15",
+    mediaUrl: img15,
     metaData: {
       type: "image",
       height: 1620,
@@ -224,6 +210,7 @@ const Montaluce = [
       focalPoint: [0, 0],
     },
   },
+
   {
     // Another Image item:
     itemId: "img19",
