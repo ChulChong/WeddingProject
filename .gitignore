@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/font,react,firebase,images
-# Edit at https://www.toptal.com/developers/gitignore?templates=font,react,firebase,images
+# Created by https://www.toptal.com/developers/gitignore/api/react,firebase,images
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,firebase,images
 
 ### Firebase ###
 .idea
@@ -10,16 +10,6 @@
 .runtimeconfig.json
 .firebase/
 
-# Untrack one specific file
-config.js
-firestoreconfig.js
-
-### Font ###
-*.fnt
-*.fon
-*.otf
-*.ttf
-*.json
 ### Images ###
 # JPEG
 *.jpg
@@ -101,4 +91,4 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/font,react,firebase,images
+# End of https://www.toptal.com/developers/gitignore/api/react,firebase,images

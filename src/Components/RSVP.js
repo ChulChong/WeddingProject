@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { Row, Form, Col, Button, Modal } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { db } from "../util/config";
-import { ref, update } from "firebase/database";
 import { useMediaQuery } from "react-responsive";
 import "./RSVP.css";
 
@@ -36,7 +34,7 @@ const RSVP = ({ namedata }) => {
   const sendEmail = (e) => {
     emailjs
       .send(
-        "service_a2fnmcp",
+        "service_ni5g6ul",
         "template_bgqnqyf",
         submitData,
         "fx2d6LDOMEEW1KFM7"
@@ -63,8 +61,12 @@ const RSVP = ({ namedata }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     sendEmail(submitData);
-    const RSVPREF = ref(db, "RSVP/" + submitData.name);
-    update(RSVPREF, submitData);
+    console.log(submitData);
+    fetch("http://localhost:8080/UpdateGuest", {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(submitData),
+    }).then(console.log(submitData.name + " has been updated."));
     handleShow();
   };
 

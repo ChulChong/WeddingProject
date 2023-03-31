@@ -57,10 +57,21 @@ export const WeddingInfo = () => {
                 Reception location will be the same.
               </div>
             </div>
+            <div className="reception">
+              <h1
+                className="title"
+                style={{ fontFamily: "JesofinSans", fontSize: "3rem" }}
+              >
+                Live Streaming
+              </h1>
+              <div style={{ marginBottom: 50 }}>
+                <a href="https://evt.live/hannah-and-chul">Link here!</a>
+              </div>
+            </div>
             <div className="map" style={{ marginBottom: 50 }}>
               <WrappedMap
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
-            libraries=geometry,drawing,places&key=AIzaSyCUb-mCFuZbZYh9CLr0xuJM-PLEhdzdQD4"
+            libraries=geometry,drawing,places&key=AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU"
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
@@ -103,10 +114,21 @@ export const WeddingInfo = () => {
                 Reception location will be the same.
               </div>
             </div>
+            <div className="receptionMobile">
+              <h1
+                className="titleMobile"
+                style={{ fontFamily: "JesofinSans", fontSize: "1.3rem" }}
+              >
+                Live Streaming
+              </h1>
+              <div style={{ marginBottom: 30 }} className="timeMobile">
+                <a href="https://evt.live/hannah-and-chul">Link here!</a>
+              </div>
+            </div>
             <div className="mapMobile" style={{ marginBottom: 20 }}>
               <WrappedMap
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
-            libraries=geometry,drawing,places&key=AIzaSyCUb-mCFuZbZYh9CLr0xuJM-PLEhdzdQD4"
+            libraries=geometry,drawing,places&key=AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU"
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}

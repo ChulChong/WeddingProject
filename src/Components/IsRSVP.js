@@ -1,13 +1,11 @@
 import { React, useState, useEffect, useRef } from "react";
 import { Row, Form, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { db } from "../util/config";
-import { onValue, ref } from "firebase/database";
 import { useMediaQuery } from "react-responsive";
 import "./RSVP.css";
 
 const IsRSVP = () => {
-  const [guesswho, setguesswho] = useState("");
+  const [guesswho, setguesswho] = useState({ name: "" });
   const [datawho, setdatawho] = useState([]);
   const [failmessage, setfailmessage] = useState();
   const form = useRef();
@@ -17,44 +15,62 @@ const IsRSVP = () => {
   const isMobile = useMediaQuery({ maxWidth: 575 });
 
   useEffect(() => {
-    onValue(ref(db, "RSVP"), (snapshot) => {
-      setdatawho([]);
-      const data = snapshot.val();
-      if (data !== null) {
-        Object.values(data).forEach((userdata) => {
-          setdatawho((oldArray) => [...oldArray, userdata]);
-        });
-      }
-    });
+    fetch("http://localhost:8080/getAllGuests", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        JSON.stringify(data);
+        setdatawho([]);
+        if (data !== null) {
+          Object.values(data).forEach((userdata) => {
+            setdatawho((oldArray) => [...oldArray, userdata]);
+          });
+        }
+      });
   }, []);
+
   const isMatched = () => {
-    if (datawho.name === "" || guesswho.name === "") {
-      console.log("here.");
+    if (datawho.name === "" || guesswho === "") {
+      console.log("null submitted.");
       return;
     }
-    console.log(datawho);
-    if (
-      datawho.some((v) => v.name.toUpperCase() === guesswho.name.toUpperCase())
-    ) {
-      const namedata = datawho.find(
-        (data) => data.name.toUpperCase() === guesswho.name.toUpperCase()
-      ).name;
-      console.log(namedata);
-      navigate("/RSVP", { state: { namedata } });
-    } else {
-      setfailmessage(
-        <div>
-          <div style={{ color: "#B62C41" }}>
-            Hmm... We can't find your name. Make sure you enter your name
-            exactly as it appears on your invitation.
-          </div>
-          <div>
-            Still having trouble? Reach out to the Hannah and Chul and request
-            access to their RSVP page.
-          </div>
-        </div>
-      );
-    }
+
+    fetch("http://localhost:8080/IsGuestIntheList", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(guesswho),
+    })
+      .then(console.log(guesswho.name + " has been sent to Spring."))
+      .then((response) => response.json())
+      .then((data) => {
+        if (data) {
+          fetch("http://localhost:8080/GuestFormatting", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(guesswho.name),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              const namedata = data;
+              navigate("/RSVP", { state: { namedata } });
+            });
+        } else {
+          console.log("the name is not in the list.");
+          setfailmessage(
+            <div>
+              <div style={{ color: "#B62C41" }}>
+                Hmm... We can't find your name. Make sure you enter your name
+                exactly as it appears on your invitation.
+              </div>
+              <div>
+                Still having trouble? Reach out to the Hannah and Chul and
+                request access to their RSVP page.
+              </div>
+            </div>
+          );
+        }
+      });
   };
 
   const handleChange = (event) => {
