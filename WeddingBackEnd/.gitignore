@@ -5,6 +5,7 @@ target/
 !**/src/main/java/com/example/wedding/service/FirebaseInitializer.java
 !**/src/main/**/target/
 !**/src/test/**/target/
+.json
 
 ### STS ###
 .apt_generated
