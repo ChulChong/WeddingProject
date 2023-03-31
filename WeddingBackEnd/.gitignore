@@ -1,11 +1,10 @@
 HELP.md
 target/
-!**/src/main/resources/wedding-1f158-firebase-adminsdk-k9e65-8a940aeeb4.json
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/java/com/example/wedding/service/FirebaseInitializer.java
 !**/src/main/**/target/
 !**/src/test/**/target/
-.json
+Service.json
+FirebaseInitializer.java
 
 ### STS ###
 .apt_generated

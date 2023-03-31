@@ -39,6 +39,7 @@ public class GuestController {
     }
 
     @PostMapping("/addGuests")
+    
     public String addGuests(@RequestBody Guests Guests) {
         CollectionReference guests = FirebaseInitializer.getFirebase().collection("Guests");
         guests.document(Guests.getName()).set(Guests);
