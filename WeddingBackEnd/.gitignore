@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 Service.json
 FirebaseInitializer.java
+Wedding.pem
 
 ### STS ###
 .apt_generated
