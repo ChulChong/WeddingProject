@@ -5,35 +5,6 @@ const CreateData = () => {
   const [name, setName] = useState("");
   const [menu] = useState("");
   const [yesorno] = useState("");
-  const [file, setFile] = useState(null);
-
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      setFile(e.target.files[0]);
-    }
-  };
-
-  const handleUploadClick = () => {
-    if (!file) {
-      return;
-    }
-
-    // 👇 Uploading the file using the fetch API to the server
-    fetch("https://httpbin.org/post", {
-      method: "POST",
-      body: file,
-      // 👇 Set headers manually for single file upload
-      headers: {
-        "content-type": "application/json",
-        "content-length": `${file.size}`, // 👈 Headers need to be a string
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        fetch("");
-      })
-      .catch((err) => console.error(err));
-  };
 
   const handleToChange = (e) => {
     setName(e.target.value);
@@ -47,7 +18,7 @@ const CreateData = () => {
     }
     const guest = { name, menu, yesorno };
     console.log(guest);
-    fetch("http://localhost:8080/addGuests", {
+    fetch("http://52.205.168.227:8080/addGuests", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(guest),
@@ -87,22 +58,6 @@ const CreateData = () => {
         >
           submit
         </Button>
-        <Form.Group controlId="formFile" className="mb-3">
-          <Form.Label>Or Import your JSON file</Form.Label>
-          <Form.Control type="file" onChange={handleFileChange} />
-
-          <Button
-            onClick={handleUploadClick}
-            style={{
-              fontSize: "1.5rem",
-              textAlign: "center",
-              fontFamily: "JesofinSans",
-              margin: 30,
-            }}
-          >
-            file submit
-          </Button>
-        </Form.Group>
       </Form>
     </div>
   );

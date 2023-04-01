@@ -62,7 +62,7 @@ const RSVP = ({ namedata }) => {
     event.preventDefault();
     sendEmail(submitData);
     console.log(submitData);
-    fetch("http://localhost:8080/UpdateGuest", {
+    fetch("http://52.205.168.227:8080/UpdateGuest", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(submitData),

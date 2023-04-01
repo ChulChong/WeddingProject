@@ -15,7 +15,7 @@ const IsRSVP = () => {
   const isMobile = useMediaQuery({ maxWidth: 575 });
 
   useEffect(() => {
-    fetch("http://localhost:8080/getAllGuests", {
+    fetch("http://52.205.168.227:8080/getAllGuests", {
       method: "GET",
     })
       .then((response) => response.json())
@@ -36,7 +36,7 @@ const IsRSVP = () => {
       return;
     }
 
-    fetch("http://localhost:8080/IsGuestIntheList", {
+    fetch("http://52.205.168.227:8080/IsGuestIntheList", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(guesswho),
@@ -45,7 +45,7 @@ const IsRSVP = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          fetch("http://localhost:8080/GuestFormatting", {
+          fetch("http://52.205.168.227:8080/GuestFormatting", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(guesswho.name),

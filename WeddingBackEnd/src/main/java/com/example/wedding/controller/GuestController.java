@@ -1,14 +1,10 @@
 package com.example.wedding.controller;
 
 import com.example.wedding.model.Guests;
-import com.example.wedding.service.FirebaseInitializer;
-import com.example.wedding.service.NameFormatter;
-import com.example.wedding.service.NameMatchFinder;
-import com.google.api.core.ApiFuture;
-import com.google.cloud.firestore.*;
+import com.example.wedding.service.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -16,41 +12,32 @@ import java.util.concurrent.ExecutionException;
 @CrossOrigin
 public class GuestController {
 
+    @Autowired
+    GuestService guestService;
+
     @GetMapping("/getAllGuests")
     public List<Guests> getAllGuests() throws ExecutionException, InterruptedException {
-        List<Guests> GuestsList = new ArrayList<>();
-        CollectionReference guests = FirebaseInitializer.getFirebase().collection("Guests");
-        ApiFuture<QuerySnapshot> future = guests.get();
-        for (DocumentSnapshot doc : future.get().getDocuments()) {
-            Guests guests1 = doc.toObject(Guests.class);
-            GuestsList.add(guests1);
-        }
-        return GuestsList;
+        return guestService.getAllGuests();
     }
 
     @PostMapping("/IsGuestIntheList")
     public boolean IsGuestIntheList(@RequestBody Guests guests) throws ExecutionException, InterruptedException {
-        return NameMatchFinder.nameMatchFinder(getAllGuests(), guests.getName());
+        return guestService.nameMatchFinder(getAllGuests(), guests.getName());
     }
 
     @PostMapping("/GuestFormatting")
     public String GuestFormatting(@RequestBody String submittedName) {
-        return NameFormatter.nameFormatter(submittedName);
+        return guestService.nameFormatter(submittedName);
     }
 
     @PostMapping("/addGuests")
-    
     public String addGuests(@RequestBody Guests Guests) {
-        CollectionReference guests = FirebaseInitializer.getFirebase().collection("Guests");
-        guests.document(Guests.getName()).set(Guests);
-        return Guests.getName();
+        return guestService.addGuests(Guests);
     }
 
     @PutMapping("/UpdateGuest")
     public Guests updateGuest(@RequestBody Guests Guests) {
-        CollectionReference guest = FirebaseInitializer.getFirebase().collection("Guests");
-        guest.document(Guests.getName()).set(Guests);
-        return Guests;
+        return guestService.updateGuest(Guests);
     }
 }
 
