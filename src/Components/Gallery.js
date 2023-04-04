@@ -121,6 +121,7 @@ const Gallery = () => {
                       playing={false}
                       width={"80vw"}
                       height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
                     ></ReactPlayer>
                   </div>
                   <div
@@ -143,6 +144,7 @@ const Gallery = () => {
                       playing={false}
                       width={"80vw"}
                       height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
                     ></ReactPlayer>
                   </div>
                   <div
@@ -218,6 +220,7 @@ const Gallery = () => {
                       playing={false}
                       width={"80vw"}
                       height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
                     ></ReactPlayer>
                   </div>
                   <div
@@ -240,6 +243,7 @@ const Gallery = () => {
                       playing={false}
                       width={"80vw"}
                       height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
                     ></ReactPlayer>
                   </div>
                   <div
@@ -304,6 +308,7 @@ const Gallery = () => {
                     playing={false}
                     width={"90vw"}
                     height={"20vh"}
+                    onPlaybackQualityChange={"hd1080"}
                   ></ReactPlayer>
                 </div>
                 <div
@@ -322,6 +327,7 @@ const Gallery = () => {
                     playing={false}
                     width={"90vw"}
                     height={"20vh"}
+                    onPlaybackQualityChange={"hd1080"}
                   ></ReactPlayer>
                 </div>
                 <div
