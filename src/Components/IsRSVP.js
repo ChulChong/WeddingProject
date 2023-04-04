@@ -15,19 +15,17 @@ const IsRSVP = () => {
   const isMobile = useMediaQuery({ maxWidth: 575 });
 
   useEffect(() => {
-    fetch("http://52.205.168.227:8080/getAllGuests", {
+    fetch("https://api.hannahandchul.com:8080/getAllGuests", {
       method: "GET",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        JSON.stringify(data);
-        setdatawho([]);
-        if (data !== null) {
-          Object.values(data).forEach((userdata) => {
-            setdatawho((oldArray) => [...oldArray, userdata]);
-          });
-        }
-      });
+    }).then((data) => {
+      console.log(data);
+      setdatawho([]);
+      if (data !== null) {
+        Object.values(data).forEach((userdata) => {
+          setdatawho((oldArray) => [...oldArray, userdata]);
+        });
+      }
+    });
   }, []);
 
   const isMatched = () => {
@@ -36,7 +34,7 @@ const IsRSVP = () => {
       return;
     }
 
-    fetch("http://52.205.168.227:8080/IsGuestIntheList", {
+    fetch("https://api.hannahandchul.com:8080/IsGuestIntheList", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(guesswho),
@@ -45,7 +43,7 @@ const IsRSVP = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          fetch("http://52.205.168.227:8080/GuestFormatting", {
+          fetch("https://api.hannahandchul.com:8080/GuestFormatting", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(guesswho.name),

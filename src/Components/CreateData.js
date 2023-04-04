@@ -18,7 +18,7 @@ const CreateData = () => {
     }
     const guest = { name, menu, yesorno };
     console.log(guest);
-    fetch("http://52.205.168.227:8080/addGuests", {
+    fetch("https://api.hannahandchul.com:8080/addGuests", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(guest),
