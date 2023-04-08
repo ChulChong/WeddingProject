@@ -21,4 +21,8 @@ Welcome to the Hannah and Chul's wedding application.
 
 ## Language used
 
-JavaScript with React.js, HTML, CSS for frontend, Spring boot for Backend, and Firebase for database, Cloud Service from AWS EC2 to keep server running, and hosting for AWS Route53.
+- JavaScript with React.js, HTML, CSS for frontend
+- Spring boot for Backend
+- Firebase for database
+- Cloud Service from AWS EC2 to keep server running
+- AWS Route 53 for hosting
