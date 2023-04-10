@@ -69,7 +69,7 @@ const Gallery = () => {
       {isDesktop && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
           <div>
-            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabss" fill>
+            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
                 <div
                   className="Gallery"
@@ -168,7 +168,7 @@ const Gallery = () => {
       {isTablet && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
           <div>
-            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabss" fill>
+            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
                 <div
                   className="Gallery"
@@ -266,7 +266,7 @@ const Gallery = () => {
       )}
       {isMobile && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
-          <Tabs defaultActiveKey="Wedding" className="mb-3 Tabss" fill>
+          <Tabs defaultActiveKey="Wedding" className="mb-3 " fill>
             <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
