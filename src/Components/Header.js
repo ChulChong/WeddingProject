@@ -121,8 +121,7 @@ const Header = () => {
         <div>
           <div>
             <img id="WeddingPicMobile" src={img} alt="ourpicture" />
-            <div className="centeredMobile">We're getting</div>
-            <div className="centeredMobile">married!</div>
+            <div className="centeredMobile">We're married!</div>
           </div>
           <div className="weddingwhoMobile">
             <div className="ournameMobile" style={{ marginTop: "-3rem" }}>
@@ -179,8 +178,7 @@ const Header = () => {
         <div>
           <div>
             <img id="WeddingPicMobile" src={img} alt="ourpicture" />
-            <div className="centeredMobile">We're getting</div>
-            <div className="centeredMobile">married!</div>
+            <div className="centeredMobile">We're married!</div>
           </div>
           <div className="weddingwhoMobile">
             <div className="ournameMobile" style={{ marginTop: -30 }}>
