@@ -1,7 +1,8 @@
 import React from "react";
 import img from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4217.JPG";
 import imgMobile from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4217.JPG";
-import "./Header.css";
+import "./Home.css";
+import "bootstrap/dist/css/bootstrap.css";
 import { useMediaQuery } from "react-responsive";
 const Header = () => {
   const isDesktop = useMediaQuery({ minWidth: 992 });

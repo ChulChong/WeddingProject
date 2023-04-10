@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./Components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavScript from "./Components/Navbar";
 import RSVP from "./Components/RSVP";
