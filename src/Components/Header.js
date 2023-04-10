@@ -1,6 +1,5 @@
 import React from "react";
-import img from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4217.JPG";
-import imgMobile from "/Users/chulchong/cs/wedding/src/util/weddingimg/Montaluce/IMG_4217.JPG";
+import img from "/Users/chulchong/cs/wedding/src/util/weddingimg/Wedding/IMG_5913.JPG";
 import "./Header.css";
 import { useMediaQuery } from "react-responsive";
 const Header = () => {
@@ -15,8 +14,7 @@ const Header = () => {
           <div>
             <img id="WeddingPic" src={img} alt="ourpicture" />
             <div className="centered">
-              <div className="Textstyling">We're getting</div>
-              <div className="Textstyling">married !</div>
+              <div className="Textstyling">We're married!</div>
             </div>
           </div>
           <div className="weddingwho">
@@ -122,7 +120,7 @@ const Header = () => {
       {isTablet && (
         <div>
           <div>
-            <img id="WeddingPicMobile" src={imgMobile} alt="ourpicture" />
+            <img id="WeddingPicMobile" src={img} alt="ourpicture" />
             <div className="centeredMobile">We're getting</div>
             <div className="centeredMobile">married!</div>
           </div>
@@ -180,7 +178,7 @@ const Header = () => {
       {isMobile && (
         <div>
           <div>
-            <img id="WeddingPicMobile" src={imgMobile} alt="ourpicture" />
+            <img id="WeddingPicMobile" src={img} alt="ourpicture" />
             <div className="centeredMobile">We're getting</div>
             <div className="centeredMobile">married!</div>
           </div>
