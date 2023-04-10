@@ -6,8 +6,8 @@ import NewYork from "./NewYork";
 import Montaluce from "./Montaluce";
 import Wedding from "./Wedding";
 import ReactPlayer from "react-player";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+import { Tab, Tabs } from "react-bootstrap";
+import "./Gallery.css";
 
 const Gallery = () => {
   const isDesktop = useMediaQuery({ minWidth: 1758 });
@@ -84,20 +84,6 @@ const Gallery = () => {
                   />
                 </div>
               </Tab>
-              <Tab eventKey="Wedding" title="Wedding, GA">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
-                  <ProGallery
-                    items={Wedding}
-                    options={options}
-                    container={container}
-                    eventsListener={eventsListener}
-                    scrollingElement={scrollingElement}
-                  />
-                </div>
-              </Tab>
               <Tab eventKey="Dahlonega" title="Dahlonega, GA">
                 <div
                   className="Gallery"
@@ -105,6 +91,20 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={Montaluce}
+                    options={options}
+                    container={container}
+                    eventsListener={eventsListener}
+                    scrollingElement={scrollingElement}
+                  />
+                </div>
+              </Tab>{" "}
+              <Tab eventKey="Wedding" title="Wedding, GA">
+                <div
+                  className="Gallery"
+                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
+                >
+                  <ProGallery
+                    items={Wedding}
                     options={options}
                     container={container}
                     eventsListener={eventsListener}
