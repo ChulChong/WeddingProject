@@ -27,3 +27,4 @@ The Backend server is running on between 08:00 AM to 09:00 PM due to server main
 - Firebase for database
 - Cloud Service from AWS EC2 to keep server running
 - AWS Route 53 for hosting
+- AWS Lambda, CloudWatch, System Manager for Auto backend instance server shut down and turn on for maintenance.
