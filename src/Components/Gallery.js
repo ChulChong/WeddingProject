@@ -19,34 +19,10 @@ const Gallery = () => {
     layoutParams: {
       structure: {
         galleryLayout: 1,
+        gallerySpacing: 25,
       },
       targetItemSize: {
-        value: 80,
-      },
-    },
-    behaviourParams: {
-      item: {
-        overlay: {
-          hoveringBehaviour: "NEVER_SHOW",
-        },
-        content: {
-          hoverAnimation: "COLOR_IN",
-          loader: "COLOR",
-        },
-      },
-      gallery: {
-        scrollAnimation: "SLIDE_UP",
-      },
-    },
-  };
-
-  const tabletoptions = {
-    layoutParams: {
-      structure: {
-        galleryLayout: "1",
-      },
-      targetItemSize: {
-        value: "80",
+        value: 100,
       },
     },
     behaviourParams: {
@@ -110,10 +86,7 @@ const Gallery = () => {
           <div>
             <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={NewYork}
                     options={flattenObject(options)}
@@ -124,10 +97,7 @@ const Gallery = () => {
                 </div>
               </Tab>
               <Tab eventKey="Dahlonega" title="Dahlonega, GA">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={Montaluce}
                     options={flattenObject(options)}
@@ -138,10 +108,7 @@ const Gallery = () => {
                 </div>
               </Tab>{" "}
               <Tab eventKey="Wedding" title="Wedding, GA">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={Wedding}
                     options={flattenObject(options)}
@@ -209,13 +176,10 @@ const Gallery = () => {
           <div>
             <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={NewYork}
-                    options={flattenObject(tabletoptions)}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -223,13 +187,10 @@ const Gallery = () => {
                 </div>
               </Tab>
               <Tab eventKey="Dahlonega" title="Dahlonega, GA">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={Montaluce}
-                    options={flattenObject(tabletoptions)}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -237,13 +198,10 @@ const Gallery = () => {
                 </div>
               </Tab>
               <Tab eventKey="Wedding" title="Wedding, GA">
-                <div
-                  className="Gallery"
-                  style={{ marginRight: 25, marginLeft: 25, marginBottom: 25 }}
-                >
+                <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
                     items={Wedding}
-                    options={flattenObject(tabletoptions)}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}

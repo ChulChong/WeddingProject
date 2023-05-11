@@ -251,7 +251,7 @@ const Montaluce = [
     metaData: {
       type: "image",
       height: 1096,
-      width: 1620,
+      width: 1920,
       focalPoint: [0, 0],
     },
   },

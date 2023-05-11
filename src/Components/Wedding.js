@@ -373,8 +373,7 @@ const Wedding = [
     metaData: {
       type: "image",
       height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
+      width: 1920,
     },
   },
 ];

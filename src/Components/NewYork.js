@@ -1,14 +1,11 @@
 import img1 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02418.jpg";
-import img2 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02432_bw.jpg";
 import img3 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02432.jpg";
 import img4 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02473.jpg";
 import img5 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02612.jpg";
 import img7 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02686.jpg";
 import img9 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02932.jpg";
 import img10 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB02982.jpg";
-import img11 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03002_bw.jpg";
 import img12 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03002.jpg";
-import img13 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03080_bw.jpg";
 import img14 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03080.jpg";
 import img16 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03290.jpg";
 import img17 from "/Users/chulchong/cs/wedding/src/util/weddingimg/CCB03350.jpg";
@@ -19,11 +16,9 @@ import img23 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC04972.jpg"
 import img24 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC04979.jpg";
 import img25 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05050.jpg";
 import img26 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05067.jpg";
-import img27 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05154_bw.jpg";
 import img28 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05154.jpg";
 import img29 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05168.jpg";
 import img30 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05331.jpg";
-import img31 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05400_bw.jpg";
 import img32 from "/Users/chulchong/cs/wedding/src/util/weddingimg/DSC05400.jpg";
 
 const Imgitems = [
@@ -35,20 +30,9 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [30, 200],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img2",
-    mediaUrl: img2,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img3",
@@ -57,7 +41,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [10, 20],
     },
   },
   {
@@ -68,7 +51,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
 
@@ -80,7 +62,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
 
@@ -92,7 +73,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -103,7 +83,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -114,20 +93,9 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img11",
-    mediaUrl: img11,
-    metaData: {
-      type: "image",
-      height: 1096,
-      width: 1620,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img12",
@@ -136,20 +104,9 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img13",
-    mediaUrl: img13,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img14",
@@ -158,7 +115,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
 
@@ -170,7 +126,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -181,7 +136,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
 
@@ -193,7 +147,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -204,7 +157,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -215,7 +167,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -226,7 +177,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -237,7 +187,6 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -248,20 +197,9 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img27",
-    mediaUrl: img27,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img28",
@@ -270,7 +208,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -281,7 +218,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -292,7 +228,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
   {
@@ -303,20 +238,9 @@ const Imgitems = [
       type: "image",
       height: 1096,
       width: 1620,
-      focalPoint: [0, 0],
     },
   },
-  {
-    // Another Image item:
-    itemId: "img31",
-    mediaUrl: img31,
-    metaData: {
-      type: "image",
-      height: 1620,
-      width: 1096,
-      focalPoint: [0, 0],
-    },
-  },
+
   {
     // Another Image item:
     itemId: "img32",
@@ -325,7 +249,6 @@ const Imgitems = [
       type: "image",
       height: 1620,
       width: 1096,
-      focalPoint: [0, 0],
     },
   },
 ];
