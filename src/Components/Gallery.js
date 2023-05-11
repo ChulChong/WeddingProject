@@ -1,5 +1,6 @@
 import React from "react";
 import { ProGallery } from "pro-gallery";
+import { flattenObject } from "pro-gallery-lib";
 import "pro-gallery/dist/statics/main.css";
 import { useMediaQuery } from "react-responsive";
 import NewYork from "./NewYork";
@@ -14,7 +15,30 @@ const Gallery = () => {
   const isTablet = useMediaQuery({ minWidth: 576, maxWidth: 1757 });
   const isMobile = useMediaQuery({ maxWidth: 575 });
 
-  const options = {};
+  const options = {
+    layoutParams: {
+      structure: {
+        galleryLayout: 1,
+      },
+      targetItemSize: {
+        value: 80,
+      },
+    },
+    behaviourParams: {
+      item: {
+        overlay: {
+          hoveringBehaviour: "NEVER_SHOW",
+        },
+        content: {
+          hoverAnimation: "COLOR_IN",
+          loader: "COLOR",
+        },
+      },
+      gallery: {
+        scrollAnimation: "SLIDE_UP",
+      },
+    },
+  };
 
   const tabletoptions = {
     layoutParams: {
@@ -42,13 +66,28 @@ const Gallery = () => {
   };
 
   const Mobileoptions = {
-    galleryLayout: 0,
-    collageDensity: "0.1",
-    galleryMargin: 10,
-    hoveringBehaviour: "NEVER_SHOW",
-    imageHoverAnimation: "ZOOM_IN",
-    gallerySize: 100,
-    imagePlacementAnimation: "SLIDE",
+    layoutParams: {
+      structure: {
+        galleryLayout: "1",
+        gallerySpacing: 10,
+      },
+      targetItemSize: {
+        value: "80",
+      },
+    },
+    behaviourParams: {
+      item: {
+        overlay: {
+          hoveringBehaviour: "NEVER_SHOW",
+        },
+        content: {
+          loader: "COLOR",
+        },
+      },
+      gallery: {
+        scrollAnimation: "SLIDE_UP",
+      },
+    },
   };
 
   // The size of the gallery container. The images will fit themselves in it
@@ -77,7 +116,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={NewYork}
-                    options={options}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -91,7 +130,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={Montaluce}
-                    options={options}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -105,7 +144,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={Wedding}
-                    options={options}
+                    options={flattenObject(options)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -176,7 +215,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={NewYork}
-                    options={tabletoptions}
+                    options={flattenObject(tabletoptions)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -190,7 +229,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={Montaluce}
-                    options={tabletoptions}
+                    options={flattenObject(tabletoptions)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -204,7 +243,7 @@ const Gallery = () => {
                 >
                   <ProGallery
                     items={Wedding}
-                    options={tabletoptions}
+                    options={flattenObject(tabletoptions)}
                     container={container}
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
@@ -271,7 +310,7 @@ const Gallery = () => {
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={NewYork}
-                  options={Mobileoptions}
+                  options={flattenObject(Mobileoptions)}
                   container={container}
                   eventsListener={eventsListener}
                   scrollingElement={scrollingElement}
@@ -282,7 +321,7 @@ const Gallery = () => {
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={Wedding}
-                  options={Mobileoptions}
+                  options={flattenObject(Mobileoptions)}
                   container={container}
                   eventsListener={eventsListener}
                   scrollingElement={scrollingElement}
@@ -293,7 +332,7 @@ const Gallery = () => {
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={Montaluce}
-                  options={Mobileoptions}
+                  options={flattenObject(Mobileoptions)}
                   container={container}
                   eventsListener={eventsListener}
                   scrollingElement={scrollingElement}

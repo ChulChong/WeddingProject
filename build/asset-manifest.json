@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d6180744.css",
-    "main.js": "/static/js/main.cb94f64c.js",
+    "main.js": "/static/js/main.cba79e4b.js",
     "proGallery_validateTypes.js": "/static/js/proGallery_validateTypes.fdec5229.chunk.js",
     "proGallery_videoScrollHelper.js": "/static/js/proGallery_videoScrollHelper.cf13d71e.chunk.js",
     "ThreeDItem.js": "/static/js/ThreeDItem.0937ee9c.chunk.js",
@@ -97,7 +97,7 @@
     "static/media/JosefinSans-Regular.ttf": "/static/media/JosefinSans-Regular.9a9558c2798e8a2f8c5c.ttf",
     "index.html": "/index.html",
     "main.d6180744.css.map": "/static/css/main.d6180744.css.map",
-    "main.cb94f64c.js.map": "/static/js/main.cb94f64c.js.map",
+    "main.cba79e4b.js.map": "/static/js/main.cba79e4b.js.map",
     "proGallery_validateTypes.fdec5229.chunk.js.map": "/static/js/proGallery_validateTypes.fdec5229.chunk.js.map",
     "proGallery_videoScrollHelper.cf13d71e.chunk.js.map": "/static/js/proGallery_videoScrollHelper.cf13d71e.chunk.js.map",
     "ThreeDItem.0937ee9c.chunk.js.map": "/static/js/ThreeDItem.0937ee9c.chunk.js.map",
@@ -111,6 +111,6 @@
   },
   "entrypoints": [
     "static/css/main.d6180744.css",
-    "static/js/main.cb94f64c.js"
+    "static/js/main.cba79e4b.js"
   ]
 }
