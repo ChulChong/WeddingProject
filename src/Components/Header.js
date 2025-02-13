@@ -1,5 +1,5 @@
 import React from "react";
-import img from "/Users/chulchong/cs/wedding/src/util/weddingimg/Wedding/IMG_5913.JPG";
+import img from "/Users/chulchong/cs/wedding/src/util/Paris/A7401738-편집.jpg";
 import "./Header.css";
 import { useMediaQuery } from "react-responsive";
 const Header = () => {
@@ -14,7 +14,10 @@ const Header = () => {
           <div>
             <img id="WeddingPic" src={img} alt="ourpicture" />
             <div className="centered">
-              <div className="Textstyling">We're married!</div>
+              <div
+                className="Textstyling"
+                style={{ marginBottom: "30px" }}
+              ></div>
             </div>
           </div>
           <div className="weddingwho">
@@ -121,7 +124,7 @@ const Header = () => {
         <div>
           <div>
             <img id="WeddingPicMobile" src={img} alt="ourpicture" />
-            <div className="centeredMobile">We're married!</div>
+            <div className="centeredMobile"></div>
           </div>
           <div className="weddingwhoMobile">
             <div className="ournameMobile" style={{ marginTop: "-3rem" }}>
@@ -178,7 +181,7 @@ const Header = () => {
         <div>
           <div>
             <img id="WeddingPicMobile" src={img} alt="ourpicture" />
-            <div className="centeredMobile">We're married!</div>
+            <div className="centeredMobile"></div>
           </div>
           <div className="weddingwhoMobile">
             <div className="ournameMobile" style={{ marginTop: -30 }}>

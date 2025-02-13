@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import NewYork from "./NewYork";
 import Montaluce from "./Montaluce";
 import Wedding from "./Wedding";
+import Paris from "./Paris";
 import ReactPlayer from "react-player";
 import { Tab, Tabs } from "react-bootstrap";
 import "./Gallery.css";
@@ -84,7 +85,7 @@ const Gallery = () => {
       {isDesktop && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
           <div>
-            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
+            <Tabs defaultActiveKey="Paris" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
                 <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
@@ -106,7 +107,7 @@ const Gallery = () => {
                     scrollingElement={scrollingElement}
                   />
                 </div>
-              </Tab>{" "}
+              </Tab>
               <Tab eventKey="Wedding" title="Wedding, GA">
                 <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
@@ -140,7 +141,7 @@ const Gallery = () => {
                   ></div>
                 </div>
               </Tab>
-              <Tab eventKey="Honeymoon" title="Honeymoon, MX">
+              <Tab eventKey="Honeymoon" title="Playa del Carmen, MX">
                 <div className="Youtubevideo">
                   <div className="video">
                     <ReactPlayer
@@ -163,6 +164,17 @@ const Gallery = () => {
                   ></div>
                 </div>
               </Tab>
+              <Tab eventKey="Paris" title="Paris, FR">
+                <div className="Gallery" style={{ marginBottom: 25 }}>
+                  <ProGallery
+                    items={Paris}
+                    options={flattenObject(options)}
+                    container={container}
+                    eventsListener={eventsListener}
+                    scrollingElement={scrollingElement}
+                  />
+                </div>
+              </Tab>
             </Tabs>
           </div>{" "}
           <div className="footer">
@@ -174,7 +186,7 @@ const Gallery = () => {
       {isTablet && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
           <div>
-            <Tabs defaultActiveKey="Wedding" className="mb-3 Tabs" fill>
+            <Tabs defaultActiveKey="Paris" className="mb-3 Tabs" fill>
               <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
                 <div className="Gallery" style={{ marginBottom: 25 }}>
                   <ProGallery
@@ -208,7 +220,7 @@ const Gallery = () => {
                   />
                 </div>
               </Tab>
-              <Tab eventKey="Chicago" title="Chdicago, IL">
+              <Tab eventKey="Chicago" title="Chicago, IL">
                 {" "}
                 <div className="Youtubevideo">
                   <div className="video">
@@ -230,7 +242,7 @@ const Gallery = () => {
                   ></div>
                 </div>
               </Tab>
-              <Tab eventKey="Honeymoon" title="Honeymoon, MX">
+              <Tab eventKey="Honeymoon" title="Playa del Carmen, MX">
                 <div className="Youtubevideo">
                   <div className="video">
                     <ReactPlayer
@@ -253,6 +265,17 @@ const Gallery = () => {
                   ></div>
                 </div>
               </Tab>
+              <Tab eventKey="Paris" title="Paris, FR">
+                <div className="Gallery" style={{ marginBottom: 25 }}>
+                  <ProGallery
+                    items={Paris}
+                    options={flattenObject(options)}
+                    container={container}
+                    eventsListener={eventsListener}
+                    scrollingElement={scrollingElement}
+                  />
+                </div>
+              </Tab>
             </Tabs>
           </div>{" "}
           <div className="footer">
@@ -263,7 +286,7 @@ const Gallery = () => {
       )}
       {isMobile && (
         <div style={{ fontFamily: "JesofinSans", fontSize: "1rem" }}>
-          <Tabs defaultActiveKey="Wedding" className="mb-3 " fill>
+          <Tabs defaultActiveKey="Paris" className="mb-3 " fill>
             <Tab eventKey="Brooklyn, NY" title="Brooklyn, NY">
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
@@ -314,7 +337,7 @@ const Gallery = () => {
                 ></div>
               </div>
             </Tab>
-            <Tab eventKey="HoneyMoon" title="Honeymoon, MX">
+            <Tab eventKey="HoneyMoon" title="Playa del Carmen, MX">
               <div className="YoutubevideoMobile">
                 <div className="video">
                   <ReactPlayer
@@ -331,6 +354,17 @@ const Gallery = () => {
                   className="footer"
                   style={{ marginTop: 30, fontSize: "1rem", marginBottom: 30 }}
                 ></div>
+              </div>
+            </Tab>
+            <Tab eventKey="Paris" title="Paris, FR">
+              <div className="Gallery" style={{ marginTop: -20 }}>
+                <ProGallery
+                  items={Paris}
+                  options={flattenObject(options)}
+                  container={container}
+                  eventsListener={eventsListener}
+                  scrollingElement={scrollingElement}
+                />
               </div>
             </Tab>
           </Tabs>
