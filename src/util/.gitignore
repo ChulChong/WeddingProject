@@ -13,6 +13,7 @@
 # Untrack one specific file
 config.js
 firestoreconfig.js
+googleAPIkey.js
 
 ### Font ###
 *.fnt
