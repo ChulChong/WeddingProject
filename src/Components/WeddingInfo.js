@@ -2,6 +2,7 @@ import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { useMediaQuery } from "react-responsive";
 import "./WeddingInfo.css";
+import googleAPIkey from "../util/googleAPIkey";
 
 export const WeddingInfo = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 991px)" });
@@ -56,7 +57,7 @@ export const WeddingInfo = () => {
               </div>
             </div>
             <div className="map" style={{ marginBottom: 50 }}>
-              <LoadScript googleMapsApiKey="AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU">
+              <LoadScript googleMapsApiKey={googleAPIkey()}>
                 <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={center}
@@ -115,7 +116,7 @@ export const WeddingInfo = () => {
               </div>
             </div>
             <div className="mapMobile" style={{ marginBottom: 20 }}>
-              <LoadScript googleMapsApiKey="AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU">
+              <LoadScript googleMapsApiKey={googleAPIkey()}>
                 <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={center}
