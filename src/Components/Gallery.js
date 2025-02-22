@@ -45,11 +45,11 @@ const Gallery = () => {
   const Mobileoptions = {
     layoutParams: {
       structure: {
-        galleryLayout: "1",
+        galleryLayout: 1, // FIX: Should be a number
         gallerySpacing: 10,
       },
       targetItemSize: {
-        value: "80",
+        value: 80, // FIX: Should be a number
       },
     },
     behaviourParams: {
@@ -57,9 +57,7 @@ const Gallery = () => {
         overlay: {
           hoveringBehaviour: "NEVER_SHOW",
         },
-        content: {
-          loader: "COLOR",
-        },
+        content: { hoverAnimation: "COLOR_IN", loader: "COLOR" },
       },
       gallery: {
         scrollAnimation: "SLIDE_UP",
@@ -67,17 +65,14 @@ const Gallery = () => {
     },
   };
 
-  // The size of the gallery container. The images will fit themselves in it
   const container = {
     width: window.innerWidth,
     height: window.innerHeight,
   };
 
-  // The eventsListener will notify you anytime something has happened in the gallery.
   const eventsListener = (eventName, eventData) =>
     console.log({ eventName, eventData });
 
-  // The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
   const scrollingElement = window;
 
   return (
@@ -173,6 +168,27 @@ const Gallery = () => {
                     eventsListener={eventsListener}
                     scrollingElement={scrollingElement}
                   />
+                </div>
+                <div className="Youtubevideo">
+                  <div className="video">
+                    <ReactPlayer
+                      url={
+                        "https://www.youtube.com/watch?v=en_t86EbLKc&ab_channel=ChulChong"
+                      }
+                      playing={false}
+                      width={"80vw"}
+                      height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
+                    ></ReactPlayer>
+                  </div>
+                  <div
+                    className="footer"
+                    style={{
+                      marginTop: 30,
+                      fontSize: "1rem",
+                      marginBottom: 50,
+                    }}
+                  ></div>
                 </div>
               </Tab>
             </Tabs>
@@ -275,6 +291,25 @@ const Gallery = () => {
                     scrollingElement={scrollingElement}
                   />
                 </div>
+                <div className="Youtubevideo">
+                  <div className="video">
+                    <ReactPlayer
+                      url={"https://www.youtube.com/watch?v=hopYhw8PWXc"}
+                      playing={false}
+                      width={"80vw"}
+                      height={"60vh"}
+                      onPlaybackQualityChange={"hd1080"}
+                    ></ReactPlayer>
+                  </div>
+                  <div
+                    className="footer"
+                    style={{
+                      marginTop: 30,
+                      fontSize: "1rem",
+                      marginBottom: 50,
+                    }}
+                  ></div>
+                </div>
               </Tab>
             </Tabs>
           </div>{" "}
@@ -360,7 +395,7 @@ const Gallery = () => {
               <div className="Gallery" style={{ marginTop: -20 }}>
                 <ProGallery
                   items={Paris}
-                  options={flattenObject(options)}
+                  options={flattenObject(Mobileoptions)}
                   container={container}
                   eventsListener={eventsListener}
                   scrollingElement={scrollingElement}

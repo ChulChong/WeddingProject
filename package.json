@@ -2,28 +2,34 @@
   "name": "wedding",
   "version": "1.0",
   "private": true,
+  "homepage": "/",
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@emailjs/browser": "^4.4.1",
+    "@react-google-maps/api": "^2.20.6",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
     "axios": "^1.3.4",
     "bootstrap": "^5.1.3",
-    "firebase": "^9.8.2",
+    "caniuse-lite": "^1.0.30001699",
+    "css-select": "^5.1.0",
+    "firebase": "^11.3.1",
     "firestore-export-import": "^1.3.5",
-    "node": "^16.10.0",
-    "pro-gallery": "^5.0.46",
-    "pro-gallery-lib": "^5.0.46",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
+    "node": "^22.14.0",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.2",
+    "pro-gallery": "^5.0.113",
+    "pro-gallery-lib": "^5.0.112",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.9",
     "react-dom": "^18.1.0",
-    "react-google-maps": "^9.4.5",
-    "react-icons": "^4.4.0",
-    "react-player": "^2.10.1",
-    "react-responsive": "^9.0.0-beta.8",
-    "react-router-dom": "^6.3.0",
+    "react-icons": "^5.4.0",
+    "react-player": "^2.16.0",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^7.1.5",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "svgo": "^3.3.2",
+    "web-vitals": "^4.2.4"
   },
   "overrides": {
     "autoprefixer": "10.4.5"
@@ -53,6 +59,11 @@
     ]
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
     "sass": "^1.52.3"
+  },
+  "resolutions": {
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.2"
   }
 }

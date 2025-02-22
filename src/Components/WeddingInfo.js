@@ -1,31 +1,18 @@
-import { React } from "react";
-import {
-  GoogleMap,
-  withScriptjs,
-  withGoogleMap,
-  Marker,
-} from "react-google-maps";
+import React from "react";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { useMediaQuery } from "react-responsive";
 import "./WeddingInfo.css";
 
 export const WeddingInfo = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 991px)",
-  });
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 991px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 991px)" });
 
-  function Map() {
-    return (
-      <GoogleMap
-        defaultZoom={15}
-        defaultCenter={{ lat: 34.52409, lng: -84.05213 }}
-      >
-        <Marker key={1} position={{ lat: 34.52409, lng: -84.05213 }}></Marker>
-      </GoogleMap>
-    );
-  }
+  const containerStyle = {
+    width: isDesktopOrLaptop ? "100%" : "100%",
+    height: "400px",
+  };
 
-  const WrappedMap = withScriptjs(withGoogleMap(Map));
+  const center = { lat: 34.52409, lng: -84.05213 };
 
   return (
     <div>
@@ -69,13 +56,15 @@ export const WeddingInfo = () => {
               </div>
             </div>
             <div className="map" style={{ marginBottom: 50 }}>
-              <WrappedMap
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
-            libraries=geometry,drawing,places&key=AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU"
-                loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `400px` }} />}
-                mapElement={<div style={{ height: `100%` }} />}
-              />
+              <LoadScript googleMapsApiKey="AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU">
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={center}
+                  zoom={15}
+                >
+                  <Marker position={center} />
+                </GoogleMap>
+              </LoadScript>
             </div>
             <div className="footer">
               <div>Copyright© 2022 Chul Chong</div>
@@ -126,13 +115,15 @@ export const WeddingInfo = () => {
               </div>
             </div>
             <div className="mapMobile" style={{ marginBottom: 20 }}>
-              <WrappedMap
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&
-            libraries=geometry,drawing,places&key=AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU"
-                loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `400px` }} />}
-                mapElement={<div style={{ height: `100%` }} />}
-              />
+              <LoadScript googleMapsApiKey="AIzaSyDxQFV71mDH6_zOkg5TLclGcYJX3JZ30KU">
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={center}
+                  zoom={15}
+                >
+                  <Marker position={center} />
+                </GoogleMap>
+              </LoadScript>
             </div>
             <div className="footermobile">
               <div>Copyright© 2022 Chul Chong</div>
